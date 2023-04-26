@@ -1,0 +1,45 @@
+.natural-doors {
+}
+.natural-doors__inner {
+  margin-bottom: 326px;
+}
+.natural-doors__title {
+  max-width: 765px;
+  margin-left: 8.55%;
+}
+
+.natural-doors__list {
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: repeat(167, 10px);
+}
+.natural-doors__item--1 {
+  grid-column: 10/57;
+  grid-row: 27/72;
+
+  margin-left: -1%;
+  max-width: 500px;
+}
+.natural-doors__item--2 {
+  grid-row: 1/64;
+  grid-column: 61/101;
+
+  margin-left: -1%;
+  margin-top: -11.2%;
+
+  max-width: 632px;
+}
+.natural-doors__item--3 {
+  grid-row: 91/160;
+  grid-column: 1/50;
+
+  max-width: 765px;
+
+  margin-top: 0.5%;
+}
+.natural-doors__item--4 {
+  grid-row: 82/126;
+  grid-column: 69/101;
+
+  margin-top: -1%;
+}
