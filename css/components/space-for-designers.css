@@ -18,18 +18,11 @@
   padding-top: 230px;
 }
 .space-for-designers__item {
+  will-change: max-width, max-height;
   max-width: 235px;
   max-height: 370px;
   height: 100%;
   width: 100%;
-
-  -webkit-transition: all, 0.5s;
-
-  -o-transition: all, 0.5s;
-
-  -moz-transition: all, 0.5s;
-
-  transition: all, 0.5s;
 }
 .space-for-designers__item img {
   display: block;
@@ -73,6 +66,16 @@
   animation-duration: 1s;
 }
 
+.space-for-designers__item.swiper-slide-active img {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: disActive;
+  -moz-animation-name: disActive;
+  -o-animation-name: disActive;
+  animation-name: disActive;
+}
 .space-for-designers__controlers {
   position: absolute;
   top: 188px;
@@ -160,5 +163,65 @@
     -o-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes disActive {
+  0% {
+    -webkit-transform: scale(1.4, 1.2);
+
+    transform: scale(1.4, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes disActive {
+  0% {
+    -moz-transform: scale(1.4, 1.2);
+
+    transform: scale(1.4, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes disActive {
+  0% {
+    -o-transform: scale(1.4, 1.2);
+
+    transform: scale(1.4, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes disActive {
+  0% {
+    -webkit-transform: scale(1.4, 1.2);
+
+    -moz-transform: scale(1.4, 1.2);
+
+    -o-transform: scale(1.4, 1.2);
+
+    transform: scale(1.4, 1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
 }
