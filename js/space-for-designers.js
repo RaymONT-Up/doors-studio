@@ -1,6 +1,5 @@
 const swiper = new Swiper(".space-for-designers__slider", {
-  // slidesPerView: "auto",
-  slidesPerView: 4,
+  slidesPerView: "auto",
 
   spaceBetween: 30,
   initialSlide: 0,
@@ -12,5 +11,9 @@ const swiper = new Swiper(".space-for-designers__slider", {
   pagination: {
     el: ".space-for-designers__pagination",
     type: "fraction",
+    renderFraction: (currentClass, totalClass) => {
+      console.log(currentClass, totalClass);
+      return `<span class="${currentClass}"></span> из <span class="${totalClass}"></span> Фото`;
+    },
   },
 });
