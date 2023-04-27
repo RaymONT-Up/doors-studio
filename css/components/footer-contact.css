@@ -1,0 +1,26 @@
+.footer-contact {
+}
+.footer-contact__inner {
+  padding-bottom: 70px;
+}
+.footer-contact__title {
+  margin-bottom: 65px;
+}
+.footer-contact__list {
+  max-width: 1030px;
+  display: grid;
+  margin-left: 10px;
+  grid-gap: 155px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-contact__item {
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+  -moz-font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  font-weight: 500;
+}
+.footer-contact__item--social .link {
+  display: block;
+  border-bottom: 1px solid transparent;
+}

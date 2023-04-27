@@ -1,0 +1,32 @@
+.showroom {
+}
+.showroom__inner {
+  margin-bottom: 200px;
+}
+.showroom__title {
+  margin-bottom: 54px;
+}
+
+.showroom__video-wrapper {
+  max-height: 497px;
+  height: 100%;
+  margin-bottom: 53px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.showroom .video__player {
+  display: none;
+}
+
+.showroom__info {
+  max-width: 498px;
+  margin-left: auto;
+}
+.showroom__paragraph {
+  margin-bottom: 24px;
+}
+.showroom__link {
+  display: inline-block;
+}
