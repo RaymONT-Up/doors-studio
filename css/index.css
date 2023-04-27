@@ -21,6 +21,13 @@ body {
 
   color: var(--color-1);
 }
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  line-height: 0;
+}
 
 /* Container */
 .container {
@@ -193,4 +200,8 @@ body {
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.preview-card__link-img {
+  width: 16px;
+  height: 16px;
 }

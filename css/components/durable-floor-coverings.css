@@ -1,0 +1,38 @@
+.durable-floor-coverings__inner {
+  margin-bottom: 283px;
+}
+.durable-floor-coverings__title {
+  max-width: 765px;
+}
+.durable-floor-coverings__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  margin-bottom: 7.2%;
+}
+.durable-floor-coverings__item--1 {
+  max-width: 632px;
+  max-height: 695px;
+
+  margin-top: 15%;
+  margin-right: 12.5%;
+}
+.durable-floor-coverings__item--2 {
+  max-width: 500px;
+  max-height: 695px;
+
+  margin-top: 2.6%;
+}
+.durable-floor-coverings__item--3 {
+  max-width: 500px;
+  max-height: 331px;
+
+  margin-left: auto;
+  margin-right: 10.3%;
+}
+.durable-floor-coverings__item--3 .preview-card__img-wrapper {
+  margin-bottom: 24px;
+}

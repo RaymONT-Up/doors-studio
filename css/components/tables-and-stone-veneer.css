@@ -1,0 +1,30 @@
+.tables-and-stone-veneer {
+}
+.tables-and-stone-veneer__inner {
+  margin-bottom: 312px;
+}
+.tables-and-stone-veneer__title {
+  margin-bottom: 54px;
+}
+.tables-and-stone-veneer__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.tables-and-stone-veneer__item--1 {
+  max-width: 499px;
+  max-height: 726px;
+
+  margin-top: 5.5%;
+}
+.tables-and-stone-veneer__item--2 {
+  max-width: 631px;
+  max-height: 593px;
+}

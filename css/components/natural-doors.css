@@ -11,7 +11,9 @@
 .natural-doors__list {
   display: grid;
   grid-template-columns: repeat(100, 1fr);
-  grid-template-rows: repeat(167, 10px);
+  grid-template-rows: repeat(160, 10px);
+  /* grid-template-rows: auto; */
+  /* grid-gap: 9.5px 0; */
 }
 .natural-doors__item--1 {
   grid-column: 10/57;
