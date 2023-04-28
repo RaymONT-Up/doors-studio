@@ -1,3 +1,6 @@
+@import "./../components/menu.css";
+@import "./../components/header-search.css";
+
 .header__inner {
   display: -webkit-box;
   display: -webkit-flex;

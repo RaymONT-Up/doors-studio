@@ -134,3 +134,9 @@ button {
   padding: 0;
   cursor: pointer;
 }
+input {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}

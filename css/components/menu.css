@@ -103,41 +103,9 @@
 .menu__item .preview-card__img-wrapper {
   width: 100%;
   max-height: 230px;
+  min-height: 230px;
   height: 100%;
   margin-bottom: 12px;
-}
-.menu__item .preview-card__link {
-  margin-top: auto;
-  font-size: 17px;
-  line-height: 141%;
-
-  border-color: rgba(var(--color-3-RGB), 0.8);
-  color: rgba(var(--color-3-RGB), 0.8);
-
-  -webkit-transition: all, var(--transition-duration-hover);
-
-  -o-transition: all, var(--transition-duration-hover);
-
-  -moz-transition: all, var(--transition-duration-hover);
-
-  transition: all, var(--transition-duration-hover);
-}
-.menu__item svg {
-  margin-left: 12px;
-}
-.menu__item path {
-  stroke: rgba(var(--color-3-RGB), 0.8);
-  -webkit-transition: all, var(--transition-duration-hover);
-  -o-transition: all, var(--transition-duration-hover);
-  -moz-transition: all, var(--transition-duration-hover);
-  transition: all, var(--transition-duration-hover);
-}
-.menu__item:hover .preview-card__link {
-  border-color: rgba(var(--color-3-RGB), 1);
-  color: rgba(var(--color-3-RGB), 1);
-}
-.menu__item:hover path {
-  stroke: rgba(var(--color-3-RGB), 1);
 }
 
 .menu__nav {
