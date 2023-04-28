@@ -1,19 +1,27 @@
-const swiper = new Swiper(".space-for-designers__slider", {
+const spaceForDesignersPagination = document.querySelector(
+  ".space-for-designers__pagination"
+);
+const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   slidesPerView: "auto",
 
   spaceBetween: 30,
-  initialSlide: 0,
 
   navigation: {
     nextEl: ".space-for-designers__slider-arrow--next",
     prevEl: ".space-for-designers__slider-arrow--prev",
   },
-  pagination: {
-    el: ".space-for-designers__pagination",
-    type: "fraction",
-    renderFraction: (currentClass, totalClass) => {
-      console.log(currentClass, totalClass);
-      return `<span class="${currentClass}"></span> из <span class="${totalClass}"></span> Фото`;
+  on: {
+    init: function () {
+      const activeIndex = 4 + this.activeIndex;
+      const totalSlides = this.slides.length;
+
+      spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
+    },
+    slideChange: function () {
+      const activeIndex = 4 + this.activeIndex;
+      const totalSlides = this.slides.length;
+
+      spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
     },
   },
 });
