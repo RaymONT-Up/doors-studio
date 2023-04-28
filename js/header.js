@@ -1,9 +1,12 @@
-const headerMenuBtn = document.querySelector(".header__menu-btn");
-const header = document.querySelector(".header");
-const headerMenu = document.querySelector(".menu");
-const body = document.body;
-headerMenuBtn.addEventListener("click", e => {
-  headerMenu.classList.toggle("menu--active");
-  header.classList.toggle("header-menu--active");
-  body.classList.toggle("body-lock");
+const menuBtnOpen = document.querySelector(".js-menu-btn--open");
+const menuBtnClose = document.querySelector(".js-menu-btn--close");
+const menu = document.querySelector(".menu");
+
+menuBtnOpen.addEventListener("click", () => {
+  menu.classList.add("menu--active");
+  document.body.classList.add("body-lock");
+});
+menuBtnClose.addEventListener("click", () => {
+  menu.classList.remove("menu--active");
+  document.body.classList.remove("body-lock");
 });
