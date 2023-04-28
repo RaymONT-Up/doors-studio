@@ -22,6 +22,9 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 141%;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+  -moz-font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: "pnum" on, "lnum" on;
 
   color: var(--color-1);
 }
@@ -352,11 +355,12 @@ img {
   position: relative;
 }
 .video__preview {
-  /* position: absolute;
+  position: absolute;
+  z-index: 5;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; */
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -374,6 +378,21 @@ img {
   justify-content: center;
 
   cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transition: all, 0.5s;
+
+  -o-transition: all, 0.5s;
+
+  -moz-transition: all, 0.5s;
+
+  transition: all, 0.5s;
+}
+.video__preview--show {
+  opacity: 1;
+  visibility: visible;
 }
 .video__preview::after {
   content: "";
@@ -391,10 +410,7 @@ img {
 }
 .video__player {
   display: block;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+
   width: 100%;
   height: 100%;
   z-index: 1;

@@ -8,16 +8,11 @@
 }
 
 .showroom__video-wrapper {
-  max-height: 497px;
-  height: 100%;
+  height: 497px;
   margin-bottom: 53px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.showroom .video__player {
-  display: none;
 }
 
 .showroom__info {

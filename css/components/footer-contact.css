@@ -1,4 +1,6 @@
 .footer-contact {
+  padding: 60px 0 70px 0;
+  background-color: var(--color-5);
 }
 .footer-contact__inner {
   padding-bottom: 70px;

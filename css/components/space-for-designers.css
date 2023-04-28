@@ -1,7 +1,7 @@
 .space-for-designers {
 }
 .space-for-designers__inner {
-  margin-bottom: 100px;
+  margin-bottom: -50px;
 }
 .space-for-designers__title {
   max-width: 619px;
@@ -23,6 +23,14 @@
   max-width: 235px;
   height: 100%;
   width: 100%;
+
+  -webkit-user-select: none;
+
+  -moz-user-select: none;
+
+  -ms-user-select: none;
+
+  user-select: none;
 }
 .space-for-designers__item img {
   will-change: max-width, max-height;
@@ -116,6 +124,12 @@
 
 .space-for-designers__pagination {
   text-align: right;
+
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+
+  -moz-font-feature-settings: "pnum" on, "lnum" on;
+
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 @-webkit-keyframes sliderActive {
