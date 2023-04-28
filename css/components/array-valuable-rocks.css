@@ -38,6 +38,7 @@
   margin-bottom: -25%;
 
   max-width: 500px;
+  min-width: 350px;
   max-height: 724px;
 }
 .array-valuable-rocks__img--3 {
@@ -45,4 +46,68 @@
 
   max-width: 539px;
   max-height: 205px;
+}
+
+@media (max-width: 1266px) {
+  .array-valuable-rocks__box {
+    margin-left: 10vw;
+  }
+}
+@media (max-width: 1000px) {
+  .array-valuable-rocks__info {
+    margin-right: 5%;
+  }
+  .array-valuable-rocks__box {
+    margin-left: 5vw;
+  }
+  .array-valuable-rocks__img--3 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .array-valuable-rocks__title {
+    max-width: 236px;
+    margin-bottom: 16px;
+
+    font-size: 32px;
+    line-height: 119%;
+  }
+  .array-valuable-rocks__paragraph {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .array-valuable-rocks__img--1 {
+    width: 173px;
+    height: 173px;
+    margin-bottom: 60px;
+  }
+
+  .array-valuable-rocks__info {
+    max-width: 240px;
+  }
+  .array-valuable-rocks__img--1 img {
+    height: 100%;
+  }
+  .array-valuable-rocks__box {
+    margin-left: 11%;
+    margin-bottom: 14%;
+  }
+
+  .array-valuable-rocks__img--2 {
+    height: 430px;
+    min-width: 248px;
+    width: 248px;
+    margin-top: 27%;
+  }
+  .array-valuable-rocks__img--2 img {
+    height: 100%;
+  }
+
+  .array-valuable-rocks__img--3 {
+    max-width: 320px;
+  }
+  .array-valuable-rocks__img--3 img {
+    height: 129px;
+  }
 }

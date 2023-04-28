@@ -50,3 +50,47 @@
 .header__menu-btn svg {
   margin-right: 12px;
 }
+
+@media (max-width: 800px) {
+  .header__inner {
+    padding: 20px 0;
+  }
+  .header__logo {
+    width: 80px;
+  }
+  .header__menu-btn {
+    font-size: 15px;
+    line-height: 133%;
+  }
+  .header__menu-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+  .header__search-btn {
+    margin-right: 22px;
+  }
+  .header__search-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .header__inner {
+    padding: 18px 0;
+  }
+  .header__logo {
+    width: 60px;
+  }
+  .header__menu-btn {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .header__menu-btn svg {
+    margin-right: 0;
+  }
+
+  .header__search-btn {
+    margin-right: 20px;
+  }
+}
