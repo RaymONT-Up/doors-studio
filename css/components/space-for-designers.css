@@ -1,4 +1,5 @@
 .space-for-designers {
+  background-color: var(--color-3);
 }
 .space-for-designers__inner {
   margin-bottom: -50px;

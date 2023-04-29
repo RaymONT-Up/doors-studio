@@ -1,5 +1,8 @@
+.floors-not-afraid-moisture {
+  background-color: var(--color-3);
+}
 .floors-not-afraid-moisture__inner {
-  margin-bottom: 321px;
+  padding: 161px 0 200px 0;
 }
 
 .floors-not-afraid-moisture__box {

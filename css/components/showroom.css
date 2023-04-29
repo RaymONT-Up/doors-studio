@@ -1,7 +1,8 @@
 .showroom {
+  background-color: var(--color-3);
 }
 .showroom__inner {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
 .showroom__title {
   margin-bottom: 54px;

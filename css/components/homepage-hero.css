@@ -1,6 +1,9 @@
+.homepage-hero {
+  background-color: var(--color-3);
+}
 .homepage-hero__inner {
-  margin-top: 101px;
-  margin-bottom: 224px;
+  padding-top: 101px;
+  padding-bottom: 94px;
 }
 .homepage-hero__img-wrapper {
   max-width: 1295px;
@@ -27,8 +30,7 @@
 
 @media (max-width: 800px) {
   .homepage-hero__inner {
-    margin-top: 25px;
-    margin-bottom: 140px;
+    padding: 26px 0 60px 0;
   }
   .homepage-hero__img-wrapper {
     margin-bottom: 33px;
@@ -44,8 +46,7 @@
 }
 @media (max-width: 400px) {
   .homepage-hero__inner {
-    margin-top: 13px;
-    margin-bottom: 96px;
+    padding: 20px 0 53px 0;
   }
   .homepage-hero__img-wrapper {
     display: none;

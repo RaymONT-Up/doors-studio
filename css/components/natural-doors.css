@@ -1,7 +1,8 @@
 .natural-doors {
+  background-color: var(--color-4);
 }
 .natural-doors__inner {
-  margin-bottom: 326px;
+  padding: 130px 0 126px 0;
 }
 .natural-doors__title {
   max-width: 765px;
@@ -13,7 +14,6 @@
   grid-template-columns: repeat(100, 1fr);
   grid-template-rows: repeat(160, 10px);
   /* grid-template-rows: auto; */
-  /* grid-gap: 9.5px 0; */
 }
 .natural-doors__item--1 {
   grid-column: 10/57;
@@ -63,7 +63,7 @@
 }
 @media (max-width: 800px) {
   .natural-doors__inner {
-    margin-bottom: 156px;
+    padding: 78px 0;
   }
   .natural-doors__title {
     max-width: 670px;
@@ -132,5 +132,10 @@
   }
   .natural-doors__item--4 .preview-card__img-wrapper {
     height: 210px;
+  }
+}
+@media (max-width: 400px) {
+  .natural-doors__inner {
+    padding: 40px 0;
   }
 }

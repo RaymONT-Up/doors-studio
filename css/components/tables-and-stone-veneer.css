@@ -1,5 +1,8 @@
+.tables-and-stone-veneer {
+  background-color: var(--color-4);
+}
 .tables-and-stone-veneer__inner {
-  margin-bottom: 313px;
+  padding: 120px 0 112px 0;
 }
 .tables-and-stone-veneer__title {
   margin-bottom: 54px;
