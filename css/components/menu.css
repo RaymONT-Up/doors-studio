@@ -177,6 +177,9 @@
 
   text-decoration: none;
 }
+.menu__footer-wrapper {
+  margin: 0 10px;
+}
 
 @media (max-width: 1200px) {
   .menu__list {
@@ -232,10 +235,7 @@
   .menu__container {
     margin-bottom: 25px;
   }
-  .menu__footer-wrapper {
-    margin-right: 12px;
-    padding: 0 0px 0 20px;
-  }
+
   .menu__footer {
     grid-template-columns: 143px 134px 74px;
     grid-gap: 0 18.5vw;
@@ -260,10 +260,6 @@
     padding: 32px 0 40px 0;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-  }
-  .menu__footer-wrapper {
-    margin-right: 12px;
-    padding: 0 0px 0 12px;
   }
 }
 @media (max-width: 600px) {

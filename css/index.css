@@ -449,6 +449,9 @@ img {
 .slider-arrows__arrow--next:hover svg {
   opacity: 1;
 }
+.slider-arrows__arrow--mob {
+  display: none;
+}
 
 .slider-arrows__arrow--prev {
   margin-right: 24px;
@@ -509,6 +512,17 @@ img {
   .preview-card__link {
     font-size: 17px;
     line-height: 141%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-arrows__arrow--next svg,
+  .slider-arrows__arrow--prev svg {
+    display: none;
+  }
+  .slider-arrows__arrow--prev .slider-arrows__arrow--mob,
+  .slider-arrows__arrow--next .slider-arrows__arrow--mob {
+    display: block;
   }
 }
 
