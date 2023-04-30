@@ -1318,7 +1318,7 @@
         </div>
       </section>
 
-      <!-- <section class="portfolio-preview">
+      <section class="portfolio-preview">
         <div class="container">
           <div class="portfolio-preview__inner">
             <div class="portfolio-preview__title title--2">
@@ -1329,30 +1329,32 @@
               функциональность и качество. Посмотрите наши проекты и убедитесь в
               этом сами
             </p>
-            <ul class="portfolio-preview__nav">
-              <li
-                class="portfolio-preview__nav-item title--5 portfolio-preview__nav-item--active"
-              >
-                Все проекты
-                <sup class="portfolio-preview__nav-item-count">150</sup>
-              </li>
-              <li class="portfolio-preview__nav-item title--5">
-                Межкомнатные двери
-                <sup class="portfolio-preview__nav-item-count">56</sup>
-              </li>
-              <li class="portfolio-preview__nav-item title--5">
-                Напольные покрытия
-                <sup class="portfolio-preview__nav-item-count">29</sup>
-              </li>
-              <li class="portfolio-preview__nav-item title--5">
-                Столы
-                <sup class="portfolio-preview__nav-item-count">16</sup>
-              </li>
-              <li class="portfolio-preview__nav-item title--5">
-                Каменный шпон
-                <sup class="portfolio-preview__nav-item-count">8</sup>
-              </li>
-            </ul>
+            <div class="portfolio-preview__slider swiper">
+              <ul class="portfolio-preview__nav swiper-wrapper">
+                <li
+                  class="portfolio-preview__nav-item title--5 portfolio-preview__nav-item--active swiper-slide"
+                >
+                  Все проекты
+                  <sup class="portfolio-preview__nav-item-count">150</sup>
+                </li>
+                <li class="portfolio-preview__nav-item title--5 swiper-slide">
+                  Межкомнатные двери
+                  <sup class="portfolio-preview__nav-item-count">56</sup>
+                </li>
+                <li class="portfolio-preview__nav-item title--5 swiper-slide">
+                  Напольные покрытия
+                  <sup class="portfolio-preview__nav-item-count">29</sup>
+                </li>
+                <li class="portfolio-preview__nav-item title--5 swiper-slide">
+                  Столы
+                  <sup class="portfolio-preview__nav-item-count">16</sup>
+                </li>
+                <li class="portfolio-preview__nav-item title--5 swiper-slide">
+                  Каменный шпон
+                  <sup class="portfolio-preview__nav-item-count">8</sup>
+                </li>
+              </ul>
+            </div>
             <ul class="portfolio-preview__items">
               <li class="portfolio-preview__item portfolio-preview__item--1">
                 <a href="#" class="preview-card">
@@ -1570,6 +1572,30 @@
                   </div>
                 </a>
               </li>
+              <li class="portfolio-preview__item portfolio-preview__item--10">
+                <a href="#" class="preview-card">
+                  <div class="preview-card__img-wrapper">
+                    <img
+                      class="preview-card__img"
+                      src="./img/portfolio/portfolio-preview-5.jpg"
+                      alt="Sofia Magnolia в сети отелей Ibis"
+                    />
+                    <div class="preview-card__hover">
+                      <div class="preview-card__hover-body title--5">
+                        Смотреть проект
+                      </div>
+                    </div>
+                  </div>
+                  <div class="preview-card__link">
+                    Sofia Magnolia в сети отелей Ibis
+                    <img
+                      class="preview-card__link-img"
+                      src="./img/icons/arrow-up-right.svg"
+                      alt="Перейти"
+                    />
+                  </div>
+                </a>
+              </li>
             </ul>
 
             <div class="portfolio-preview__btn-wrapper">
@@ -1582,7 +1608,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="showroom">
         <div class="container">
@@ -1836,5 +1862,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/space-for-designers.js"></script>
+    <script src="./js/portfolio-preview.js"></script>
   </body>
 </html>

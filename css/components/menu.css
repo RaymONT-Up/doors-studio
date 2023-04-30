@@ -248,6 +248,14 @@
   }
 }
 @media (max-width: 650px) {
+  .menu {
+    display: block;
+  }
+  .menu__container {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
   .menu__footer {
     padding: 32px 0 40px 0;
     grid-template-columns: 1fr;
@@ -256,9 +264,6 @@
   .menu__footer-wrapper {
     margin-right: 12px;
     padding: 0 0px 0 12px;
-  }
-  .menu__container {
-    margin-bottom: 40px;
   }
 }
 @media (max-width: 600px) {
@@ -313,5 +318,14 @@
   }
   .menu__nav {
     margin-top: 44px;
+  }
+}
+
+@media (max-height: 800px) {
+  .menu {
+    display: block;
+  }
+  .menu__container {
+    overflow: hidden;
   }
 }
