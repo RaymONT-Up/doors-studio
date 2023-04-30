@@ -65,6 +65,7 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
     },
     601: {
       spaceBetween: 10,
+      slidesPerView: 5.5,
     },
     700: {
       spaceBetween: 20,
