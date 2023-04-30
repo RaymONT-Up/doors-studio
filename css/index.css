@@ -449,6 +449,7 @@ img {
 .slider-arrows__arrow--next:hover svg {
   opacity: 1;
 }
+
 .slider-arrows__arrow--prev {
   margin-right: 24px;
 }
@@ -478,7 +479,13 @@ img {
     font-size: 15px;
     line-height: 133%;
   }
-
+  .slider-arrows__arrow--prev svg,
+  .slider-arrows__arrow--next svg {
+    width: 40px;
+  }
+  .slider-arrows__arrow--prev {
+    margin-right: 32px;
+  }
   .title--1 {
     font-size: 54px;
     line-height: 115%;

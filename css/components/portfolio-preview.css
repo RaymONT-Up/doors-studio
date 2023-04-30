@@ -2,7 +2,7 @@
   background-color: var(--color-3);
 }
 .portfolio-preview__inner {
-  padding: 203px 0;
+  padding: 203px 0 195px 0;
 }
 .portfolio-preview__title {
   max-width: 627px;
