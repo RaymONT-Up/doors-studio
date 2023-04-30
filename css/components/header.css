@@ -1,10 +1,8 @@
-@import "./../components/menu.css";
-@import "./../components/header-search.css";
-
-.header {
+@import "./menu.css";
+@import "./header-search.css";
+.header--bg {
   background-color: var(--color-3);
 }
-
 .header__inner {
   display: -webkit-box;
   display: -webkit-flex;

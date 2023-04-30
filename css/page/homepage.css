@@ -1,4 +1,5 @@
 @import "./../components/header.css";
+@import "./../components/footer-contact.css";
 
 @import "./../components/homepage-hero.css";
 @import "./../components/natural-doors.css";
@@ -9,5 +10,3 @@
 @import "./../components/portfolio-preview.css";
 @import "./../components/showroom.css";
 @import "./../components/space-for-designers.css";
-
-@import "./../components/footer-contact.css";

@@ -195,6 +195,28 @@ img {
   opacity: 0.8;
 }
 
+/* crumbs */
+
+.crumbs__item {
+  padding-right: 10px;
+
+  font-size: 15px;
+  line-height: 133%;
+  text-decoration: none;
+
+  color: var(--color-1);
+}
+.crumbs__item:last-child {
+  color: rgba(var(--color-1-RGB), 0.5);
+
+  pointer-events: none;
+  cursor: none;
+}
+.crumbs__item:not(:last-child)::after {
+  content: "/";
+  padding-left: 10px;
+}
+
 /* Preview-card */
 .preview-card {
   display: -webkit-box;
