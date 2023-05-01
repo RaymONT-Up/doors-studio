@@ -1,10 +1,11 @@
 @import "./catalog-filter.css";
+@import "./products-grid.css";
 
 .catalog__title {
   margin: 11px 0 40px 0;
 }
 .catalog__tabs {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .catalog__top {
@@ -23,7 +24,7 @@
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
 }
 
 .catalog__quantity {
