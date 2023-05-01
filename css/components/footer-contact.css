@@ -21,7 +21,7 @@
 
   font-weight: 500;
 }
-.footer-contact__item--social .link {
+.footer-contact__item .link {
   display: block;
   border-bottom: 1px solid transparent;
 }

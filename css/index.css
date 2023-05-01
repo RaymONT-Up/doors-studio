@@ -195,10 +195,42 @@ img {
   opacity: 0.8;
 }
 
-/* crumbs */
+/* Tabs */
 
+.tab {
+  padding: 14px 0 8px 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid transparent;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+
+  color: var(--color-2);
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
+}
+.tab:not(:last-child) {
+  margin-right: 40px;
+}
+.tab.tab--active {
+  font-weight: 600;
+
+  color: var(--color-1);
+  border-color: var(--color-1);
+}
+
+/* crumbs */
 .crumbs__item {
-  padding-right: 10px;
+  padding-right: 7px;
 
   font-size: 15px;
   line-height: 133%;
@@ -214,7 +246,7 @@ img {
 }
 .crumbs__item:not(:last-child)::after {
   content: "/";
-  padding-left: 10px;
+  padding-left: 11px;
 }
 
 /* Preview-card */

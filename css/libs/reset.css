@@ -133,6 +133,10 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+  font-size: inherit;
+  -webkit-font-feature-settings: inherit;
+  -moz-font-feature-settings: inherit;
+  font-feature-settings: inherit;
 }
 input {
   background-color: transparent;
