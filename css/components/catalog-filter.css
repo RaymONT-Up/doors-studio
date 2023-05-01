@@ -246,7 +246,7 @@
   -moz-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
   -o-transform: translateY(-50%) rotate(180deg);
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-80%) rotate(180deg);
 }
 
 /* Checkboxs */
@@ -428,4 +428,20 @@
 .catalog-filter__door-icon {
   margin-left: auto;
   display: block;
+}
+
+@media (max-width: 769px) {
+  .catalog-filter__body {
+    max-width: 620px;
+    padding: 24px;
+  }
+  .catalog-filter__close {
+    margin: -15px -15px -28px auto;
+    padding: 15px 15px 15px 15px;
+  }
+  .catalog-filter__title {
+    font-size: 32px;
+
+    margin-bottom: 21px;
+  }
 }
