@@ -39,6 +39,65 @@ img {
   object-fit: cover;
   line-height: 0;
 }
+
+/* input */
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+
+  -moz-font-feature-settings: "pnum" on, "lnum" on;
+
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: var(--color-1);
+
+  border-bottom: 1px solid rgba(var(--color-1-RGB), 0.6);
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
+}
+
+.input:focus-visible {
+  outline-width: 0;
+  border-color: var(--color-1);
+}
+
+.input::-webkit-input-placeholder {
+  opacity: 0.7;
+}
+
+.input:-moz-placeholder {
+  opacity: 0.7;
+}
+
+.input::-moz-placeholder {
+  opacity: 0.7;
+}
+
+.input:-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+.input::-ms-input-placeholder {
+  opacity: 0.7;
+}
+
+.input::placeholder {
+  opacity: 0.7;
+}
 /* Scroll */
 
 /* Container */
