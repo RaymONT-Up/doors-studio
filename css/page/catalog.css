@@ -3,6 +3,10 @@
 
 @import "./../components/catalog.css";
 
+@import "./../components/from-strength-to-aesthetics.css";
+
+@import "./../components/we-in-touch.css";
+
 .main--catalog {
   margin-top: 80px;
 }

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(40, 1fr);
   grid-gap: 149px 0;
-  margin-bottom: 100px;
 }
 
 .products-grid__item--1 .product-item__img,
