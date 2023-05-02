@@ -53,6 +53,9 @@
 
   font-feature-settings: "pnum" on, "lnum" on;
 }
+.from-strength-to-aesthetics__link--mob {
+  display: none;
+}
 @media (max-width: 1200px) {
   .from-strength-to-aesthetics__box {
     max-width: 480px;
@@ -71,7 +74,7 @@
     padding: 100px 0;
   }
   .from-strength-to-aesthetics__title {
-    max-width: 341px;
+    max-width: 510px;
     margin: 0 0 16px 0;
   }
   .from-strength-to-aesthetics__paragraph {
@@ -86,10 +89,43 @@
     margin-left: auto;
     height: 380px;
   }
+  .from-strength-to-aesthetics__info {
+    margin-left: 0;
+  }
   .from-strength-to-aesthetics__link {
-    margin: 32px 20% 0 auto;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 
+    margin: 32px 22.35% 0 auto;
     font-size: 20px;
     line-height: 140%;
+  }
+  .from-strength-to-aesthetics__link::after {
+    opacity: 1;
+    bottom: -12px;
+  }
+  .from-strength-to-aesthetics__link::before {
+    opacity: 1;
+  }
+  .from-strength-to-aesthetics__link--pc {
+    display: none;
+  }
+  .from-strength-to-aesthetics__link--mob {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .from-strength-to-aesthetics__title {
+    max-width: 341px;
+  }
+}
+@media (max-width: 600px) {
+  .from-strength-to-aesthetics__link {
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 17px;
+    line-height: 141%;
   }
 }

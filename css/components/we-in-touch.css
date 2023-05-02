@@ -18,7 +18,7 @@
 }
 .we-in-touch__box {
   margin-right: 20px;
-
+  margin-left: 3px;
   max-width: 629px;
   width: 100%;
 }
@@ -28,7 +28,7 @@
 }
 .we-in-touch__paragraph {
   max-width: 392px;
-  margin-bottom: 54px;
+  margin-bottom: 45px;
 }
 .we-in-touch__form {
   display: -webkit-box;
@@ -45,10 +45,11 @@
   flex-direction: column;
 }
 .we-in-touch__label {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
 }
 
 .we-in-touch__input {
+  margin-top: 7px;
 }
 
 .we-in-touch__img {
@@ -61,8 +62,55 @@
 }
 
 .we-in-touch__btn {
+  margin-top: 14px;
   max-width: 321px;
 
   color: var(--color-4);
   background-color: var(--color-1);
+}
+
+@media (max-width: 1000px) {
+  .we-in-touch__img {
+    min-width: 300px;
+  }
+  .we-in-touch__box {
+    min-width: 460px;
+  }
+}
+
+@media (max-width: 800px) {
+  .we-in-touch__inner {
+    padding: 72px 0;
+    margin-bottom: 38px;
+  }
+  .we-in-touch__title {
+    margin-bottom: 26px;
+  }
+  .we-in-touch__paragraph {
+    max-width: 264px;
+    margin-bottom: 24px;
+  }
+  .we-in-touch__box {
+    margin-left: 19px;
+    min-width: auto;
+  }
+
+  .we-in-touch__form {
+    max-width: 319px;
+    margin-left: 2px;
+  }
+  .we-in-touch__label {
+    margin-bottom: 16px;
+  }
+  .we-in-touch__btn {
+    margin-top: 16px;
+    max-width: 220px;
+  }
+  .we-in-touch__img {
+    max-width: 270px;
+    max-height: 380px;
+    height: 380px;
+    min-width: 200px;
+    margin: 9% 2.5% 0 0;
+  }
 }

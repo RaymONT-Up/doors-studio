@@ -16,3 +16,9 @@
     margin-top: 41px;
   }
 }
+
+@media (max-width: 600px) {
+  .main--catalog {
+    margin-top: 17px;
+  }
+}

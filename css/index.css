@@ -857,6 +857,11 @@ img {
     line-height: 141%;
   }
 
+  .input {
+    font-size: 15px;
+    line-height: 133%;
+  }
+
   .video__preview-btn {
     width: 60px;
   }
@@ -866,12 +871,14 @@ img {
     padding: 0 20px;
   }
 
-  .btn-border {
+  .btn-border,
+  .btn-background {
     padding: 12px;
 
     font-size: 15px;
     line-height: 133%;
   }
+
   .slider-arrows__arrow--prev svg,
   .slider-arrows__arrow--next svg {
     width: 40px;
@@ -941,6 +948,27 @@ img {
   .slider-arrows__arrow--prev .slider-arrows__arrow--mob,
   .slider-arrows__arrow--next .slider-arrows__arrow--mob {
     display: block;
+  }
+
+  .crumbs__item {
+    padding-right: 1px;
+  }
+  .crumbs__item:not(:last-child)::after {
+    padding-left: 5px;
+  }
+
+  .tabs-container {
+    margin-right: -12px;
+    padding-right: 12px;
+  }
+  .tab {
+    padding: 16px 5px 10px 5px;
+
+    font-size: 15px;
+    line-height: 133%;
+  }
+  .tab:not(:last-child) {
+    margin-right: 27px;
   }
 }
 
