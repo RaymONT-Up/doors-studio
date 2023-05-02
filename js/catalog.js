@@ -40,7 +40,7 @@ const catalogAccordion = () => {
         return;
       }
       parent.classList.add("catalog-filter__accordion--open");
-      content.style.maxHeight = `${content.scrollHeight}px`;
+      content.style.maxHeight = `${content.scrollHeight * 2}px`;
     });
   });
 };
