@@ -5,10 +5,11 @@ const tabsScrollSlider = new Swiper(".tabs-container", {
 const tabs = document.querySelectorAll(".tab");
 
 const tabActiveChanger = e => {
-  if (e.target.classList.contains("tab--active")) return;
+  const tab = e.target.closest(".tab");
+  if (tab.classList.contains("tab--active")) return;
 
   tabs.forEach(tab => tab.classList.remove("tab--active"));
-  e.target.classList.add("tab--active");
+  tab.classList.add("tab--active");
 };
 
 tabs.forEach(tab => {

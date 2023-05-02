@@ -1,0 +1,8 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/product.css";
+
+.main--product {
+  margin-top: 91px;
+}
