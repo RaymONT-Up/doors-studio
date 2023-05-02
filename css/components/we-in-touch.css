@@ -114,3 +114,40 @@
     margin: 9% 2.5% 0 0;
   }
 }
+
+@media (max-width: 640px) {
+  .we-in-touch__img {
+    display: none;
+  }
+  .we-in-touch__box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .we-in-touch__inner {
+    padding: 57px 0;
+    margin-left: 8px;
+    margin-bottom: 22px;
+  }
+
+  .we-in-touch__title {
+    margin-bottom: 13px;
+  }
+  .we-in-touch__paragraph {
+    margin-bottom: 11px;
+  }
+  .we-in-touch__label {
+    margin-bottom: 9px;
+  }
+  .we-in-touch__form {
+    margin-left: 0px;
+    width: 100%;
+    max-width: 315px;
+  }
+  .we-in-touch__btn {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+}

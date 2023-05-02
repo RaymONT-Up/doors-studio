@@ -995,6 +995,25 @@ img {
     font-size: 17px;
     line-height: 141%;
   }
+
+  .pagination {
+    margin-top: -2px;
+    margin-left: -10px;
+  }
+  .navigation__arrow--next {
+    margin-top: -4px;
+    margin-right: 0;
+  }
+  .navigation__arrow--prev {
+    margin-top: -4px;
+    margin-left: 0;
+  }
+  .pagination__item:not(:last-child) {
+    margin-right: 6px;
+  }
+  .navigation__arrow svg {
+    width: 16px;
+  }
 }
 
 @media (max-width: 400px) {

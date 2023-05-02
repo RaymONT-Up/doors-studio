@@ -122,10 +122,40 @@
   }
 }
 @media (max-width: 600px) {
+  .from-strength-to-aesthetics__inner {
+    padding: 53px 0;
+  }
+  .from-strength-to-aesthetics__title {
+    max-width: 221px;
+    margin-bottom: 16px;
+  }
+
+  .from-strength-to-aesthetics__paragraph {
+    max-width: 200px;
+    margin-bottom: 24px;
+
+    font-size: 15px;
+    line-height: 133%;
+  }
+
   .from-strength-to-aesthetics__link {
     margin-left: 0;
     margin-right: auto;
     font-size: 17px;
     line-height: 141%;
+  }
+  .from-strength-to-aesthetics__img-2 {
+    max-height: 300px;
+  }
+}
+@media (max-width: 460px) {
+  .from-strength-to-aesthetics__inner {
+    margin-left: -2px;
+  }
+  .from-strength-to-aesthetics__img-2 {
+    max-height: 232px;
+  }
+  .from-strength-to-aesthetics__link {
+    margin-top: 23px;
   }
 }
