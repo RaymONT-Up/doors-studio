@@ -23,7 +23,6 @@ window.addEventListener("keydown", e => {
 });
 
 const catalogAccordion = () => {
-  // const accordions = document.querySelectorAll(".catalog-filter__accordion");
   const accordionBtns = document.querySelectorAll(
     ".catalog-filter__accordion-btn"
   );

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <!-- Swiper css
+    <!-- Swiper css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    /> -->
+    />
     <!-- Index css -->
     <link rel="stylesheet" href="./css/index.css" />
     <!-- Page css -->
@@ -2193,11 +2193,20 @@
         <div class="container--2">
           <div class="catalog__inner">
             <h1 class="catalog__title title--2">Распашные двери</h1>
-            <div class="catalog__tabs">
-              <button class="catalog__tab tab tab--active">Все двери</button>
-              <button class="catalog__tab tab">Одностворчатые</button>
-              <button class="catalog__tab tab">Двустворчатые</button>
+            <div class="swiper tabs-container">
+              <div class="catalog__tabs swiper-wrapper">
+                <button class="catalog__tab tab tab--active swiper-slide">
+                  Все двери
+                </button>
+                <button class="catalog__tab tab swiper-slide">
+                  Одностворчатые
+                </button>
+                <button class="catalog__tab tab swiper-slide">
+                  Двустворчатые
+                </button>
+              </div>
             </div>
+
             <div class="catalog__top">
               <p class="catalog__quantity">112 товаров</p>
               <div class="catalog__controllers">
@@ -3471,7 +3480,9 @@
               <div class="from-strength-to-aesthetics__title title--2">
                 От прочности до эстетики
               </div>
-
+              <p class="from-strength-to-aesthetics__paragraph">
+                все, что вам нужно знать об алюминиевых дверях
+              </p>
               <div class="from-strength-to-aesthetics__img-1">
                 <img
                   src="./img/from-strength-to-aesthetics-1.jpg"
@@ -3566,5 +3577,8 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/catalog.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/tabs.js"></script>
   </body>
 </html>

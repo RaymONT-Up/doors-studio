@@ -238,7 +238,7 @@ img {
 .link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   right: 0;
   height: 1px;
@@ -365,6 +365,8 @@ img {
 /* Tabs */
 
 .tab {
+  display: inline-block;
+  width: auto;
   padding: 14px 0 8px 0;
   margin-bottom: 10px;
   border-bottom: 2px solid transparent;
@@ -374,6 +376,7 @@ img {
   font-weight: 400;
   font-size: 17px;
   line-height: 141%;
+  white-space: nowrap;
 
   color: var(--color-2);
 
@@ -876,6 +879,11 @@ img {
   .slider-arrows__arrow--prev {
     margin-right: 32px;
   }
+
+  .tab:not(:last-child) {
+    margin-right: 32px;
+  }
+
   .title--1 {
     font-size: 54px;
     line-height: 115%;
@@ -899,6 +907,29 @@ img {
   .preview-card__link {
     font-size: 17px;
     line-height: 141%;
+  }
+
+  .navigation__arrow--prev {
+    margin-top: 13px;
+    margin-left: -4px;
+  }
+  .navigation__arrow--next {
+    margin-top: 13px;
+    margin-right: 5px;
+  }
+  .navigation__arrow svg {
+    width: 24px;
+  }
+  .pagination {
+    margin-top: 11px;
+    margin-left: 0px;
+  }
+  .pagination__item {
+    font-size: 17px;
+    line-height: 141%;
+  }
+  .pagination__item:last-child {
+    padding: 8px;
   }
 }
 

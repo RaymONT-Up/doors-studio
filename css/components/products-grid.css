@@ -147,6 +147,8 @@
   transition: all, var(--transition-duration-hover);
 }
 .product-item__info {
+  position: relative;
+
   margin-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -169,6 +171,7 @@
   margin-bottom: 10px;
   font-size: 20px;
   line-height: 140%;
+  white-space: nowrap;
 
   -webkit-font-feature-settings: "pnum" on, "lnum" on;
 
@@ -181,6 +184,7 @@
 .product-item__collection {
   color: var(--color-2);
 
+  white-space: nowrap;
   font-size: 17px;
   line-height: 141%;
 }
@@ -282,6 +286,9 @@
 
 .product-item__colors {
   display: -webkit-box;
+  position: absolute;
+  top: 3px;
+  right: 0px;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -297,8 +304,60 @@
   background-color: #816e67;
 }
 .product-item__colors-quantity {
+  margin-top: -4px;
   font-size: 17px;
   line-height: 141%;
 
   color: var(--color-2);
+}
+
+@media (max-width: 1250px) {
+  .products-grid__item--2 .product-item__img,
+  .products-grid__item--3 .product-item__img,
+  .products-grid__item--4 .product-item__img,
+  .products-grid__item--6 .product-item__img,
+  .products-grid__item--7 .product-item__img,
+  .products-grid__item--8 .product-item__img,
+  .products-grid__item--11 .product-item__img,
+  .products-grid__item--12 .product-item__img,
+  .products-grid__item--13 .product-item__img,
+  .products-grid__item--15 .product-item__img,
+  .products-grid__item--17 .product-item__img,
+  .products-grid__item--18 .product-item__img,
+  .products-grid__item--19 .product-item__img,
+  .products-grid__item--21 .product-item__img,
+  .products-grid__item--22 .product-item__img,
+  .products-grid__item--23 .product-item__img {
+    min-height: 300px;
+  }
+}
+@media (max-width: 800px) {
+
+  .product-item__name {
+    margin-bottom: 8px;
+    font-size: 17px;
+    line-height: 141%;
+  }
+  .product-item__collection {
+    font-size: 15px;
+    line-height: 133%;
+  }
+  .product-item__info {
+    margin-bottom: 16px;
+  }
+  .product-item__arrow {
+    width: 16px;
+  }
+
+  .product-item__colors {
+    top: 4px;
+  }
+  .product-item__colors-item {
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+  }
+  .product-item__colors-quantity {
+    font-size: 15px;
+  }
 }

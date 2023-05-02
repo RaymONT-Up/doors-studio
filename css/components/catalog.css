@@ -109,3 +109,124 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
+@media (max-width: 1000px) {
+  .catalog__item--9,
+  .catalog__item--10,
+  .catalog__item--11,
+  .catalog__item--12,
+  .catalog__item--13,
+  .catalog__item--14,
+  .catalog__item--15,
+  .catalog__item--16,
+  .catalog__item--17,
+  .catalog__item--18,
+  .catalog__item--19,
+  .catalog__item--20,
+  .catalog__item--21,
+  .catalog__item--22,
+  .catalog__item--23,
+  .catalog__item--24 {
+    display: none;
+  }
+
+  .catalog__list {
+    grid-gap: 100px 0;
+  }
+
+  .catalog__item--1 .product-item__img,
+  .catalog__item--4 .product-item__img,
+  .catalog__item--4 .product-item__img,
+  .catalog__item--5 .product-item__img,
+  .catalog__item--8 .product-item__img {
+    max-height: 384px;
+  }
+
+  .catalog__item--2 .product-item__img,
+  .catalog__item--3 .product-item__img,
+  .catalog__item--6 .product-item__img,
+  .catalog__item--7 .product-item__img {
+    max-height: 260px;
+    min-height: 260px;
+  }
+
+  .catalog__item--1 {
+    margin-right: -3%;
+    grid-column: 1/18;
+  }
+
+  .catalog__item--2 {
+    margin-right: 0;
+    margin-left: -2%;
+    grid-column: 21/34;
+  }
+
+  .catalog__item--3 {
+    margin-right: -1%;
+    margin-left: 0;
+    grid-column: 1/14;
+  }
+
+  .catalog__item--4 {
+    grid-column: 16/33;
+    margin-left: 2%;
+  }
+
+  .catalog__item--5 {
+    margin-right: -4%;
+    grid-column: 8/25;
+  }
+
+  .catalog__item--6 {
+    grid-column: 28/41;
+    margin-left: -1%;
+  }
+
+  .catalog__item--7 {
+    grid-column: 8/21;
+    margin-right: -2%;
+  }
+  .catalog__item--8 {
+    margin-left: 2%;
+    margin-right: 0;
+    grid-column: 23/41;
+  }
+}
+
+@media (max-width: 800px) {
+  .catalog__inner {
+    padding-bottom: 68px;
+  }
+  .catalog__top {
+    margin-bottom: 32px;
+  }
+  .catalog__title {
+    margin-bottom: 24px;
+
+    font-size: 54px;
+    line-height: 115%;
+  }
+  .catalog__tabs {
+    margin-bottom: 24px;
+  }
+
+  .catalog__selector-btn,
+  .catalog__filter-btn,
+  .catalog__quantity {
+    font-size: 17px;
+  }
+
+  .catalog__list {
+    grid-gap: 59px 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog__inner {
+    padding-bottom: 44px;
+  }
+  .catalog__list {
+    margin-bottom: 44px;
+  }
+}

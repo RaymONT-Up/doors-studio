@@ -10,3 +10,9 @@
 .main--catalog {
   margin-top: 80px;
 }
+
+@media (max-width: 800px) {
+  .main--catalog {
+    margin-top: 41px;
+  }
+}
