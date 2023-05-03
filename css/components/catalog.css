@@ -291,6 +291,12 @@
     align-items: center;
     margin-bottom: 24px;
   }
+
+  .catalog__controllers .select-items {
+    left: 0;
+    right: auto;
+  }
+
   .catalog__list {
     margin-bottom: 44px;
   }

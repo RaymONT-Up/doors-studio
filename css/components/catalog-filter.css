@@ -570,6 +570,10 @@
   .catalog-filter__door-icon {
     margin-left: 0;
     margin-right: auto;
+    min-width: 139px;
+    width: 139px;
+    height: 250px;
+    min-height: 250px;
   }
 }
 @media (max-width: 460px) {
