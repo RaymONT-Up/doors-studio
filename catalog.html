@@ -1410,6 +1410,39 @@
                 <div
                   class="catalog-filter__accordion-content catalog-filter__accordion-content--size"
                 >
+                  <div class="catalog-filter__selectors">
+                    <div class="label select">
+                      <div class="filter_form_lable__name">Ширина (А), мм.</div>
+                      <select
+                        name="catalog-filter-width"
+                        id="catalog-filter-width"
+                      >
+                        <option value="none" selected disabled>
+                          Ширина (А), мм.
+                        </option>
+                        <option value="">500 мм.</option>
+                        <option value="">200 мм.</option>
+                        <option value="">100 мм.</option>
+                        <option value="">3000 мм.</option>
+                      </select>
+                    </div>
+                    <div class="label select">
+                      <div class="filter_form_lable__name">Высота (Б), мм.</div>
+                      <select
+                        name="catalog-filter-height"
+                        id="catalog-filter-height"
+                      >
+                        <option value="none" selected disabled>
+                          Высота (Б), мм.
+                        </option>
+                        <option value="500 мм.">500 мм.</option>
+                        <option value="">200 мм.</option>
+                        <option value="">100 мм.</option>
+                        <option value="">3000 мм.</option>
+                      </select>
+                    </div>
+                  </div>
+
                   <svg
                     class="catalog-filter__door-icon"
                     width="168"
@@ -2210,7 +2243,18 @@
             <div class="catalog__top">
               <p class="catalog__quantity">112 товаров</p>
               <div class="catalog__controllers">
-                <button class="catalog__selector-btn">По умолчанию</button>
+                <div class="label select">
+                  <div class="filter_form_lable__name">Сортировка</div>
+                  <select name="catalog-sort" id="catalog-sort">
+                    <option value="popular" selected disabled>
+                      Популярные
+                    </option>
+                    <option value="novelties">Новинки</option>
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                  </select>
+                </div>
+
                 <button class="catalog__filter-btn js-filter-btn-open">
                   Фильтр
                 </button>
@@ -3582,6 +3626,7 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/catalog.js"></script>
+    <script src="./js/select.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/tabs.js"></script>
