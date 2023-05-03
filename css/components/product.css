@@ -71,8 +71,9 @@
   height: 100%;
 }
 .product__info {
-  margin-left: 163px;
+  margin-left: 2.5%;
   max-width: 631px;
+  min-width: 500px;
   width: 100%;
 }
 
@@ -236,4 +237,157 @@
 .product__description-img-wrapper {
   max-width: 633px;
   max-height: 300px;
+}
+@media (max-width: 1000px) {
+  .product__img-wrapper {
+    padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .product__inner {
+    padding-bottom: 39px;
+    margin-bottom: 120px;
+  }
+
+  .product__img-wrapper {
+    padding: 20px 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 240px;
+    max-width: 240px;
+  }
+  .product__img {
+    max-width: 200px;
+    max-height: 450px;
+  }
+
+  .product .crumbs {
+    display: none;
+  }
+  .product__info {
+    max-width: 444px;
+    min-width: auto;
+  }
+  .product__title {
+    margin: 0 0 30px 0;
+  }
+
+  .product__form-subtitle {
+    margin-bottom: 11px;
+  }
+
+  .product__form-size-text {
+    font-size: 15px;
+    line-height: 133%;
+  }
+  .product__form-label--size {
+    font-size: 15px;
+    line-height: 133%;
+    margin-right: 16px;
+    margin-bottom: 4px;
+  }
+  .product__form-radio {
+    margin-right: 10px;
+  }
+
+  .product__size {
+    margin-right: -10px;
+    margin-bottom: 25px;
+  }
+  .product__form-color {
+    margin-top: 24px;
+  }
+
+  .product .door-color__label {
+    margin-right: 18px;
+  }
+  .product__form-color {
+    margin-right: -14px;
+    margin-bottom: 39px;
+  }
+
+  .product__pay {
+    max-width: 412px;
+    margin-bottom: 39px;
+  }
+  .product__price {
+    margin-bottom: 29px;
+  }
+  .product__pay .product__form-subtitle {
+    margin-bottom: 18px;
+
+    font-size: 17px;
+    line-height: 141%;
+  }
+
+  .product__set-list {
+    grid-gap: 20px 40px;
+    max-width: 391px;
+    margin-bottom: 26px;
+  }
+  .product__set-item::before {
+    width: 24px;
+    height: 24px;
+  }
+  .product__set-item {
+    font-size: 15px;
+    line-height: 133%;
+  }
+
+  .product__btn-submit {
+    padding: 17px 4px;
+  }
+
+  .product__description-title {
+    margin-bottom: 17px;
+  }
+  .product__description-paragraph {
+    max-width: 444px;
+    margin-bottom: 16px;
+  }
+  .product__description-img-wrapper {
+    height: 300px;
+  }
+  .product__top {
+    margin-bottom: 86px;
+  }
+
+  .product__bottom {
+    max-width: 512px;
+  }
+}
+@media (max-width: 700px) {
+  .product__top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .product__img-wrapper {
+    position: relative;
+    top: auto;
+    max-width: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    margin: 0 0 32px 0;
+  }
+  .product__info {
+    max-width: 500px;
+  }
 }

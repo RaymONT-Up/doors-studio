@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url(./../fonts/Roboto/Roboto-Light.ttf);
+  src: url(./../fonts/Roboto/Roboto-Regular.ttf);
 }
 
 body {
@@ -436,9 +436,12 @@ img {
 
 /* Btns */
 .btn-border {
-  padding: 16px 71px;
+  padding: 16px;
   display: inline-block;
   border: 1px solid var(--color-1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   font-family: "Raleway";
   font-style: normal;
@@ -1094,11 +1097,11 @@ img {
 }
 
 .preview-card-2__name {
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 17px;
   line-height: 141%;
 
@@ -1172,15 +1175,15 @@ img {
   opacity: 0;
 }
 .preview-card-2__price span {
-  -webkit-transform: translateY(7px) translateX(-16px) scale(0.7);
+  -webkit-transform: translateY(8px) translateX(-15px) scale(0.65);
 
-  -moz-transform: translateY(7px) translateX(-16px) scale(0.7);
+  -moz-transform: translateY(8px) translateX(-15px) scale(0.65);
 
-  -ms-transform: translateY(7px) translateX(-16px) scale(0.7);
+  -ms-transform: translateY(8px) translateX(-15px) scale(0.65);
 
-  -o-transform: translateY(7px) translateX(-16px) scale(0.7);
+  -o-transform: translateY(8px) translateX(-15px) scale(0.65);
 
-  transform: translateY(7px) translateX(-16px) scale(0.7);
+  transform: translateY(8px) translateX(-15px) scale(0.65);
   display: inline-block;
 }
 
@@ -1291,6 +1294,17 @@ img {
   margin-right: 24px;
 }
 
+@media (max-width: 1000px) {
+  .title--1 {
+    font-size: 64px;
+    line-height: 115%;
+  }
+  .title--2 {
+    font-size: 54px;
+    line-height: 118%;
+  }
+}
+
 @media (max-width: 800px) {
   body {
     font-size: 15px;
@@ -1397,6 +1411,11 @@ img {
   .door-color__text {
     font-size: 13px;
     line-height: 138%;
+  }
+
+  .input-radio-custom {
+    width: 18px;
+    height: 18px;
   }
 }
 

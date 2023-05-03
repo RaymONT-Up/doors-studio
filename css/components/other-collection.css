@@ -1,0 +1,33 @@
+@import "./products-grid.css";
+
+.other-collection {
+}
+.other-collection__inner {
+  margin-bottom: 180px;
+}
+.other-collection__title {
+  margin-bottom: 92px;
+  max-width: 900px;
+}
+.other-collection__list {
+  grid-gap: 159px 0;
+  margin-bottom: 121px;
+}
+
+.other-collection .product-item__info {
+  margin-bottom: 10px;
+}
+.other-collection .product-item__price {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.other-collection .product-item__arrow {
+  display: none;
+}
+.other-collection__btn {
+  display: block;
+
+  margin: 0 auto;
+  max-width: 364px;
+  width: 100%;
+}

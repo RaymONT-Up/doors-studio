@@ -5,6 +5,16 @@
 @import "./../components/product-gallery.css";
 @import "./../components/furniture-and-accessories.css";
 
+@import "./../components/other-collection.css";
+
+@import "./../components/we-in-touch.css";
+
 .main--product {
   margin-top: 91px;
+}
+
+@media (max-width: 800px) {
+  .main--product {
+    margin-top: 40px;
+  }
 }
