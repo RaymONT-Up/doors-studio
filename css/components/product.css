@@ -1,6 +1,9 @@
 .product {
 }
 .product__inner {
+  padding-bottom: 78px;
+  margin-bottom: 150px;
+  border-bottom: 1px solid var(--color-6);
 }
 .product__top {
   position: relative;

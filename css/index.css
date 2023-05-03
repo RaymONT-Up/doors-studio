@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "Roboto";
-  src: url(./../fonts/Roboto/Roboto-Medium.ttf);
+  src: url(./../fonts/Roboto/Roboto-Light.ttf);
 }
 
 body {
@@ -1048,6 +1048,147 @@ img {
 }
 .preview-card--menu:hover path {
   stroke: rgba(var(--color-3-RGB), 1);
+}
+
+/*  */
+.preview-card-2 {
+  -webkit-text-decoration: dashed;
+  -moz-text-decoration: dashed;
+  text-decoration: dashed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.preview-card-2__img-wrapper {
+  position: relative;
+  margin-bottom: 17px;
+}
+.preview-card-2__img-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--color-1);
+  opacity: 0;
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
+}
+
+.preview-card-2__name {
+  margin-bottom: 1px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 141%;
+
+  font-stretch: 100;
+
+  color: var(--color-1);
+}
+.preview-card-2__price {
+  font-family: "TTRamillas";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+
+  color: var(--color-1);
+}
+
+.preview-card-2__hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+
+  border: 1px solid var(--color-4);
+  color: var(--color-4);
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  display: -webkit-box;
+
+  display: -webkit-flex;
+
+  display: -moz-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
+
+  opacity: 0;
+}
+.preview-card-2__price span {
+  -webkit-transform: translateY(7px) translateX(-16px) scale(0.7);
+
+  -moz-transform: translateY(7px) translateX(-16px) scale(0.7);
+
+  -ms-transform: translateY(7px) translateX(-16px) scale(0.7);
+
+  -o-transform: translateY(7px) translateX(-16px) scale(0.7);
+
+  transform: translateY(7px) translateX(-16px) scale(0.7);
+  display: inline-block;
+}
+
+.preview-card-2:hover .preview-card-2__img-wrapper::after {
+  opacity: 0.4;
+}
+.preview-card-2:hover .preview-card-2__hover {
+  opacity: 1;
 }
 /* Video */
 .video {

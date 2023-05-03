@@ -2,6 +2,8 @@
 @import "./../components/footer-contact.css";
 
 @import "./../components/product.css";
+@import "./../components/product-gallery.css";
+@import "./../components/furniture-and-accessories.css";
 
 .main--product {
   margin-top: 91px;
