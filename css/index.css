@@ -1074,6 +1074,7 @@ img {
 .preview-card-2__img-wrapper {
   position: relative;
   margin-bottom: 17px;
+  overflow: hidden;
 }
 .preview-card-2__img-wrapper::after {
   content: "";
@@ -1115,6 +1116,7 @@ img {
   font-weight: 400;
   font-size: 24px;
   line-height: 133%;
+  white-space: nowrap;
 
   color: var(--color-1);
 }
@@ -1417,6 +1419,18 @@ img {
     width: 18px;
     height: 18px;
   }
+
+  .preview-card-2__img-wrapper {
+    margin-bottom: 8px;
+  }
+  .preview-card-2__name {
+    font-size: 15px;
+    line-height: 133%;
+  }
+  .preview-card-2__price {
+    font-size: 20px;
+    line-height: 140%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1492,6 +1506,18 @@ img {
   }
   .navigation__arrow svg {
     width: 16px;
+  }
+
+  .preview-card-2__img-wrapper {
+    margin-bottom: 4px;
+  }
+  .preview-card-2__name {
+    font-size: 13px;
+    line-height: 138%;
+  }
+  .preview-card-2__price {
+    font-size: 17px;
+    line-height: 141%;
   }
 }
 

@@ -74,6 +74,10 @@
 }
 
 @media (max-width: 800px) {
+  .product-gallery__inner {
+    margin-bottom: 53px;
+  }
+
   .product-gallery__title {
     max-width: 500px;
     margin-bottom: 61px;
@@ -130,6 +134,9 @@
 }
 
 @media (max-width: 600px) {
+  .product-gallery__inner {
+    margin-bottom: 80px;
+  }
   .product-gallery__list {
     grid-gap: 2.5px 0;
   }
