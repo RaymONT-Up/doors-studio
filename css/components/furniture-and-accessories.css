@@ -101,6 +101,7 @@
 @media (max-width: 800px) {
   .furniture-and-accessories__inner {
     padding: 80px 0 88px 0;
+    margin-bottom: 61px;
   }
 
   .furniture-and-accessories__title {
@@ -230,7 +231,7 @@
   .furniture-and-accessories__item--3 {
     grid-row: 3;
     margin: 0;
-    margin-top: -121%;
+    margin-top: -119%;
     grid-column: 1/43;
   }
 

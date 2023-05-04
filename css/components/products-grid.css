@@ -331,6 +331,11 @@
     min-height: 300px;
   }
 }
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-gap: 100px 0;
+  }
+}
 @media (max-width: 800px) {
   .product-item__name {
     margin-bottom: 8px;
