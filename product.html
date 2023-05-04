@@ -980,13 +980,17 @@
         <div class="container--2">
           <div class="product__inner">
             <div class="product__top">
-              <div class="product__img-wrapper">
+              <a
+                href="./img/product/product-door-.jpg"
+                data-fancybox="gallery"
+                class="product__img-wrapper"
+              >
                 <img
                   class="product__img"
                   src="./img/product/product-door-.jpg"
                   alt="Межкомнатная дверь Profildoors Ying"
                 />
-              </div>
+              </a>
               <div class="product__info">
                 <div class="crumbs">
                   <a class="crumbs__item" href="#">Каталог</a>
@@ -1000,162 +1004,178 @@
                 </h1>
 
                 <form action="#" class="product__form">
-                  <p class="product__form-subtitle title--5">Размер полотна</p>
                   <div class="product__size">
-                    <label
-                      class="product__form-label product__form-label--size label-input-radio"
-                    >
-                      <input
-                        class="input-radio"
-                        type="radio"
-                        name="size"
-                        checked
-                      />
-                      <span
-                        class="input-radio-custom product__form-radio"
-                      ></span>
-                      <span class="product__form-size-text">600x2000 мм.</span>
-                    </label>
-                    <label
-                      class="product__form-label product__form-label--size label-input-radio"
-                    >
-                      <input class="input-radio" type="radio" name="size" />
-                      <span
-                        class="input-radio-custom product__form-radio"
-                      ></span>
+                    <p class="product__subtitle title--5">Размер полотна</p>
 
-                      <span class="product__form-size-text">700x2000 мм.</span>
-                    </label>
-                    <label
-                      class="product__form-label product__form-label--size label-input-radio"
-                    >
-                      <input class="input-radio" type="radio" name="size" />
-                      <span
-                        class="input-radio-custom product__form-radio"
-                      ></span>
-                      <span class="product__form-size-text">800x2000 мм.</span>
-                    </label>
-                    <label
-                      class="product__form-label product__form-label--size label-input-radio"
-                    >
-                      <input
-                        class="input-radio"
-                        type="radio"
-                        name="size"
-                        value="custom"
-                      />
-                      <span
-                        class="input-radio-custom product__form-radio"
-                      ></span>
-                      <span class="product__form-size-text">Свой размер</span>
-                    </label>
+                    <ul class="product__size-list">
+                      <li>
+                        <label
+                          class="product__label product__label--size label-input-radio"
+                        >
+                          <input
+                            class="input-radio"
+                            type="radio"
+                            name="size"
+                            checked
+                          />
+                          <span
+                            class="input-radio-custom product__radio"
+                          ></span>
+                          <span class="product__size-text">600x2000 мм.</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label
+                          class="product__label product__label--size label-input-radio"
+                        >
+                          <input class="input-radio" type="radio" name="size" />
+                          <span
+                            class="input-radio-custom product__radio"
+                          ></span>
+
+                          <span class="product__size-text">700x2000 мм.</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label
+                          class="product__label product__label--size label-input-radio"
+                        >
+                          <input class="input-radio" type="radio" name="size" />
+                          <span
+                            class="input-radio-custom product__radio"
+                          ></span>
+                          <span class="product__size-text">800x2000 мм.</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label
+                          class="product__label product__label--size label-input-radio"
+                        >
+                          <input
+                            class="input-radio"
+                            type="radio"
+                            name="size"
+                            value="custom"
+                          />
+                          <span
+                            class="input-radio-custom product__radio"
+                          ></span>
+                          <span class="product__size-text">Свой размер</span>
+                        </label>
+                      </li>
+                    </ul>
                   </div>
 
-                  <p class="product__form-subtitle title--5">Цвет</p>
-                  <ul class="product__form-color door-color">
-                    <li>
-                      <label class="door-color__label door-color__label--1">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="door-color__label door-color__label--2">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="door-color__label door-color__label--3">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                          checked
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="door-color__label door-color__label--4">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
+                  <div class="product__color">
+                    <p class="product__subtitle title--5">Цвет</p>
 
-                    <li>
-                      <label class="door-color__label door-color__label--5">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
+                    <ul class="product__color-list door-color">
+                      <li>
+                        <label class="door-color__label door-color__label--1">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="door-color__label door-color__label--2">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="door-color__label door-color__label--3">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                            checked
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="door-color__label door-color__label--4">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
 
-                    <li>
-                      <label class="door-color__label door-color__label--6">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="door-color__label door-color__label--7">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="door-color__label door-color__label--8">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                    <li>
-                      <label class="door-color__label door-color__label--9">
-                        <input
-                          type="radio"
-                          name="door-color"
-                          class="door-color__input-checkbox"
-                        />
-                        <span class="door-color__custom-checkbox"></span>
-                        <span class="door-color__text">Дуб шампань</span>
-                      </label>
-                    </li>
-                  </ul>
+                      <li>
+                        <label class="door-color__label door-color__label--5">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+
+                      <li>
+                        <label class="door-color__label door-color__label--6">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="door-color__label door-color__label--7">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="door-color__label door-color__label--8">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="door-color__label door-color__label--9">
+                          <input
+                            type="radio"
+                            name="door-color"
+                            class="door-color__input-checkbox"
+                          />
+                          <span class="door-color__custom-checkbox"></span>
+                          <span class="door-color__text">Дуб шампань</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
 
                   <div class="product__pay">
                     <p class="product__price title--4">
@@ -1163,9 +1183,7 @@
                       <span>36 699 ₽</span>
                     </p>
 
-                    <p class="product__form-subtitle title--5">
-                      В комплект входят:
-                    </p>
+                    <p class="product__subtitle title--5">В комплект входят:</p>
                     <ul class="product__set-list">
                       <li class="product__set-item">Полотно</li>
                       <li class="product__set-item">Короб</li>
@@ -1201,6 +1219,11 @@
                         class="product__description-img"
                       />
                     </div>
+                    <input
+                      type="submit"
+                      class="product__btn-submit btn-background"
+                      value="Разместить предварительный заказ"
+                    />
                   </div>
                 </form>
               </div>
@@ -1227,7 +1250,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-1.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-1.jpg"
@@ -1239,7 +1262,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-2.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-2.jpg"
@@ -1251,7 +1274,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-3.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-3.jpg"
@@ -1263,7 +1286,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-4.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-4.jpg"
@@ -1275,7 +1298,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-5.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-5.jpg"
@@ -1287,7 +1310,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-6.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-6.jpg"
@@ -1299,7 +1322,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-7.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-7.jpg"
@@ -1311,7 +1334,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-8.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-8.jpg"
@@ -1323,7 +1346,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-9.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-9.jpg"
@@ -1335,7 +1358,7 @@
                 <a
                   class="product-gallery__item-link"
                   href="./img/product/product-gallery-9.jpg"
-                  data-fancybox="product-gallery"
+                  data-fancybox="gallery"
                 >
                   <img
                     src="./img/product/product-gallery-9.jpg"
@@ -2059,6 +2082,6 @@
 
     <!-- FancyBox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="./js/product-gallery.js"></script>
+    <script src="./js/gallery.js"></script>
   </body>
 </html>

@@ -18,3 +18,8 @@
     margin-top: 40px;
   }
 }
+@media (max-width: 460px) {
+  .main--product {
+    margin-top: 23px;
+  }
+}
