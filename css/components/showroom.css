@@ -1,4 +1,6 @@
 .showroom {
+}
+.showroom--bg {
   background-color: var(--color-3);
 }
 .showroom__inner {

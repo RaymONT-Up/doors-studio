@@ -1,0 +1,16 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/portfolio.css";
+@import "./../components/showroom.css";
+@import "./../components/space-for-designers.css";
+@import "./../components/we-in-touch.css";
+
+.main--portfolio {
+  margin-top: 80px;
+}
+
+.main--portfolio .space-for-designers__inner {
+  margin-bottom: 199px;
+  padding-bottom: 0;
+}
