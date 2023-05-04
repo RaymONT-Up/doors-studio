@@ -14,3 +14,26 @@
   margin-bottom: 199px;
   padding-bottom: 0;
 }
+
+@media (max-width: 800px) {
+  .main--portfolio {
+    margin-top: 40px;
+  }
+  .main--portfolio .space-for-designers__inner {
+    margin-top: 45px;
+  }
+
+  .main--portfolio .space-for-designers__inner {
+    margin-bottom: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main--portfolio {
+    margin-top: 16px;
+  }
+  .main--portfolio .space-for-designers__inner {
+    margin-top: 3px;
+    margin-bottom: 60px;
+  }
+}
