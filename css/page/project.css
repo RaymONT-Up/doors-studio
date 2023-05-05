@@ -10,3 +10,13 @@
 .main--project {
   margin-top: 84px;
 }
+@media (max-width: 800px) {
+  .main--project {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .main--project {
+    margin-top: 15px;
+  }
+}
