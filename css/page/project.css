@@ -4,6 +4,8 @@
 @import "./../components/project-hero.css";
 @import "./../components/project-info.css";
 @import "./../components/project-gallery.css";
+@import "./../components/products-from-project.css";
+@import "./../components/next-project.css";
 
 .main--project {
   margin-top: 84px;
