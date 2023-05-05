@@ -1,0 +1,18 @@
+.project-info {
+}
+.project-info__inner {
+  margin-bottom: 109px;
+}
+.project-info__title {
+  margin-bottom: 68px;
+  max-width: 700px;
+}
+.project-info__box {
+  max-width: 899px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px 165px;
+}
+.project-info__paragraph {
+  max-width: 368px;
+}

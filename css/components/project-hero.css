@@ -1,0 +1,24 @@
+.project-hero__inner {
+  margin-bottom: 70px;
+}
+
+.project-hero__back {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 15px;
+  line-height: 133%;
+  text-decoration: none;
+
+  color: var(--color-1);
+}
+.project-hero__title {
+  max-width: 750px;
+  margin-bottom: 82px;
+}
+.project-hero__img-wrapper {
+  width: 100%;
+  height: 580px;
+}
+.project-hero__img {
+}

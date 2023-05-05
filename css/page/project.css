@@ -1,0 +1,10 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/project-hero.css";
+@import "./../components/project-info.css";
+@import "./../components/project-gallery.css";
+
+.main--project {
+  margin-top: 84px;
+}
