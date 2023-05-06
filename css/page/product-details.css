@@ -1,2 +1,9 @@
 @import "./../components/header.css";
 @import "./../components/footer-contact.css";
+
+@import "./../components/product-details-hero.css";
+@import "./../components/interior-canvases.css";
+
+.main--product-details {
+  margin-top: 48px;
+}
