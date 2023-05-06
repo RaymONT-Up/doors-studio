@@ -1,0 +1,47 @@
+.vertical-lock__title {
+  margin-bottom: 82px;
+}
+.vertical-lock__inner {
+  margin-left: 8.5%;
+  margin-bottom: 168px;
+}
+
+.vertical-lock__info {
+  margin-left: 10.25%;
+  max-width: 368px;
+
+  margin-bottom: 70px;
+}
+.vertical-lock__paragraph {
+  margin-bottom: 24px;
+}
+.vertical-lock__list {
+  display: grid;
+  max-width: 1282px;
+  margin-left: 10.25%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.vertical-lock__item .preview-card__link {
+  padding-bottom: 8px;
+
+  font-size: 17px;
+  line-height: 24px;
+}
+.vertical-lock__item .preview-card__link-img {
+  min-height: 20px;
+  min-width: 20px;
+}
+.vertical-lock__item:not(:last-child) {
+  margin-right: 90px;
+}
+.vertical-lock__item .preview-card__img-wrapper {
+  width: 367px;
+  height: 369px;
+}
+.vertical-lock__item--big .preview-card__img-wrapper {
+  height: 501px;
+}
+.vertical-lock__item {
+  font-size: 17px;
+  line-height: 24px;
+}

@@ -1,5 +1,6 @@
 .interior-canvases__inner {
   margin-left: 8.6%;
+  margin-bottom: 130px;
 }
 .interior-canvases__title {
   margin-bottom: 0;
@@ -64,7 +65,7 @@
 }
 
 .interior-canvases__list {
-  padding-bottom: 20%;
+  padding-bottom: 8%;
 }
 .interior-canvases__item .preview-card__img {
   height: 406px;

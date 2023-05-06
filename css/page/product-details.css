@@ -3,6 +3,9 @@
 
 @import "./../components/product-details-hero.css";
 @import "./../components/interior-canvases.css";
+@import "./../components/vertical-lock.css";
+@import "./../components/exterior-finish.css";
+@import "./../components/design-details.css";
 
 .main--product-details {
   margin-top: 48px;
