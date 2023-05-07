@@ -6,7 +6,20 @@
 @import "./../components/vertical-lock.css";
 @import "./../components/exterior-finish.css";
 @import "./../components/design-details.css";
+@import "./../components/products-from-project.css";
+@import "./../components/we-in-touch.css";
 
 .main--product-details {
   margin-top: 48px;
+}
+
+@media (max-width: 800px) {
+  .main--product-details {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .main--product-details {
+    margin-top: 16px;
+  }
 }
