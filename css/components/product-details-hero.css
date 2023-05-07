@@ -22,8 +22,14 @@
 }
 
 .product-details-hero__item {
+  -webkit-transition: opacity, var(--transition-duration-hover);
+  -o-transition: opacity, var(--transition-duration-hover);
+  -moz-transition: opacity, var(--transition-duration-hover);
+  transition: opacity, var(--transition-duration-hover);
 }
-
+.product-details-hero__item:hover {
+  opacity: 0.8;
+}
 .product-details-hero__item--1 {
   grid-column: 19/53;
   margin-top: 21%;

@@ -35,7 +35,7 @@
   margin-right: 90px;
 }
 .vertical-lock__item .preview-card__img-wrapper {
-  width: 367px;
+  width: 368px;
   height: 369px;
 }
 .vertical-lock__item--big .preview-card__img-wrapper {
@@ -44,4 +44,98 @@
 .vertical-lock__item {
   font-size: 17px;
   line-height: 24px;
+}
+
+@media (max-width: 1600px) {
+  .vertical-lock__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .vertical-lock__item .preview-card__img-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .vertical-lock__info {
+    margin-left: 0;
+  }
+  .vertical-lock__list {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .vertical-lock__inner {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 800px) {
+  .vertical-lock__inner {
+    margin-left: 8.5%;
+    margin-bottom: 119px;
+  }
+  .vertical-lock__title {
+    margin-bottom: 45px;
+  }
+  .vertical-lock__info {
+    margin-left: 4%;
+    margin-bottom: 44px;
+    max-width: 280px;
+  }
+  .vertical-lock__paragraph {
+    margin-bottom: 20px;
+  }
+  .vertical-lock__list {
+    grid-template-columns: 1.62fr 1fr 1fr;
+    margin-left: 4%;
+    grid-gap: 25px;
+  }
+
+  .vertical-lock__item {
+    max-width: 180px;
+    min-width: 160px;
+    width: 100%;
+  }
+  .vertical-lock__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .vertical-lock__item .preview-card__img-wrapper {
+    height: 180px;
+  }
+
+  .vertical-lock__item--big {
+    margin-right: 44px;
+    max-width: 250px;
+  }
+  .vertical-lock__item--big .preview-card__img-wrapper {
+    height: 340.6px;
+  }
+
+  .vertical-lock__item .preview-card__link {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .vertical-lock__inner {
+    margin-left: 0;
+    margin-bottom: 99px;
+  }
+  .vertical-lock__title {
+    margin-bottom: 32px;
+  }
+  .vertical-lock__info {
+    margin-left: 16%;
+    margin-bottom: 44px;
+    max-width: 280px;
+  }
+
+  .vertical-lock__list {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    grid-gap: 44px;
+  }
+  .vertical-lock__item--mob-right {
+    margin-left: auto;
+  }
 }

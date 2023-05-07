@@ -126,6 +126,7 @@
 @media (max-width: 800px) {
   .interior-canvases__inner {
     margin-left: 0;
+    margin-bottom: 108px;
   }
   .interior-canvases__title {
     margin-bottom: 19px;
@@ -189,6 +190,10 @@
 @media (max-width: 700px) {
 }
 @media (max-width: 650px) {
+  .interior-canvases__inner {
+    margin-bottom: 95px;
+  }
+
   .interior-canvases__title {
     margin-bottom: 33.5px;
   }
@@ -238,6 +243,9 @@
   .interior-canvases__pagination {
     width: 100%;
     text-align: center;
+    font-size: 13px;
+    line-height: 138%;
+
     padding: 0 30px;
   }
   .interior-canvases__info {
