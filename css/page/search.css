@@ -1,0 +1,13 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/search.css";
+@import "./../components/we-in-touch.css";
+
+.main--search {
+  margin-top: 86px;
+}
+
+.main--search .we-in-touch__inner {
+  margin-bottom: 82px;
+}
