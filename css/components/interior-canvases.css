@@ -35,7 +35,7 @@
 /* Slider */
 .interior-canvases__slider {
   max-width: 763px;
-
+  margin-right: 0;
   margin-left: auto;
   height: 562px;
 }
