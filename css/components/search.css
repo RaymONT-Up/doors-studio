@@ -64,7 +64,7 @@
 .search__item .product-item:hover .product-item__price {
   border-color: var(--color-1);
 }
-.search__item .product-item .product-item__name {
+.search__item .product-item__name {
   font-family: "Raleway";
 
   font-weight: 700;
@@ -176,7 +176,7 @@
     margin-bottom: 40px;
   }
 
-  .search__item .product-item .product-item__name {
+  .search__item .product-item__name {
     font-weight: 400;
     font-size: 17px;
     line-height: 140%;
@@ -285,5 +285,97 @@
   }
   .search .navigation__arrow--prev {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .search__inner {
+    margin-bottom: 40px;
+  }
+
+  .search__list {
+    grid-gap: 31px 0;
+    margin-bottom: 32px;
+  }
+
+  .search__title {
+    margin-bottom: 16px;
+
+    font-size: 28px;
+    line-height: 114%;
+  }
+  .search__quantity,
+  .select-selected {
+    font-size: 15px;
+    line-height: 133%;
+  }
+  .search__top {
+    margin-bottom: 24px;
+  }
+
+  .search__item .product-item__name {
+    font-size: 15px;
+  }
+  .search__item .product-item__info {
+    margin-bottom: 7px;
+  }
+
+  .search__item .product-item__colors {
+    margin-right: 1px;
+    margin-top: 4px;
+  }
+
+  .search__item:nth-child(n + 8) {
+    display: none;
+  }
+
+  .search__item--1 .product-item__img,
+  .search__item--4 .product-item__img,
+  .search__item--7 .product-item__img {
+    height: 372.2px;
+  }
+  .search__item--2 .product-item__img,
+  .search__item--3 .product-item__img,
+  .search__item--5 .product-item__img,
+  .search__item--6 .product-item__img {
+    height: 320px;
+  }
+  .search__item--1 {
+    grid-column: 1/37;
+    margin-right: -3%;
+  }
+
+  .search__item--2 {
+    margin-top: 4px;
+    margin-left: -2%;
+    grid-column: 13/41;
+  }
+
+  .search__item--3 {
+    margin-right: 1%;
+    margin-left: 0;
+    grid-column: 1/30;
+  }
+
+  .search__item--4 {
+    margin-right: 0px;
+    margin-left: -3%;
+    grid-column: 5/41;
+  }
+
+  .search__item--5 {
+    grid-column: 12/41;
+    margin: 0 0 0 1%;
+  }
+
+  .search__item--6 {
+    margin-right: 1%;
+    grid-column: 1/30;
+    margin-left: 0%;
+  }
+
+  .search__item--7 {
+    grid-column: 1/37;
+    margin-right: -3%;
   }
 }
