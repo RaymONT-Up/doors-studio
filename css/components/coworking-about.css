@@ -1,0 +1,63 @@
+.coworking-about__inner {
+  margin-bottom: 140px;
+}
+.coworking-about__title {
+  margin-bottom: 154px;
+  line-height: 119%;
+}
+.coworking-about__list {
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-gap: 10px;
+}
+
+.coworking-about__item-img {
+  margin-bottom: 32px;
+}
+.coworking-about__item-title {
+  margin-bottom: 17px;
+}
+
+.coworking-about__item--1 {
+  grid-column: 1/42;
+  margin-right: 1%;
+}
+.coworking-about__item--1 .coworking-about__item-paragraph {
+  max-width: 499px;
+}
+
+.coworking-about__item--2 {
+  grid-column: 62/101;
+}
+
+.coworking-about__item--3 {
+  grid-column: 11/40;
+  margin: 11% -0.5% 0 0.5%;
+}
+.coworking-about__item--4 {
+  grid-column: 62/101;
+  margin-top: 44.5%;
+}
+.coworking-about__item--5 {
+  grid-column: 1/51;
+  margin: 22% 1% 0 0;
+}
+.coworking-about__item--5 .coworking-about__item-paragraph {
+  max-width: 498px;
+  margin-bottom: 14px;
+}
+.coworking-about__link {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 463px;
+  width: 100%;
+
+  background-color: var(--color-1);
+  color: var(--color-3);
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+}

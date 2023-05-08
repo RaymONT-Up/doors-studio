@@ -476,6 +476,7 @@ img {
   font-weight: 600;
   font-size: 17px;
   line-height: 141%;
+  text-decoration: none;
 
   text-align: center;
   -webkit-font-feature-settings: "pnum" on, "lnum" on;

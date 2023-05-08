@@ -1,0 +1,9 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/coworking-hero.css";
+@import "./../components/coworking-about.css";
+@import "./../components/coworking-for.css";
+.main--coworking {
+  margin-top: 83px;
+}
