@@ -6,6 +6,14 @@
 
 .search__title {
   margin-bottom: 28px;
+
+  font-size: 54px;
+  line-height: 115%;
+}
+.search__quantity,
+.select-selected {
+  font-size: 17px;
+  line-height: 141%;
 }
 .search__top {
   display: -webkit-box;
@@ -146,4 +154,136 @@
 }
 .search__item--27 .product-item__img {
   max-height: 760px;
+}
+
+@media (max-width: 1250px) {
+  .search__item .product-item__img {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .search__list {
+    grid-gap: 46px 0;
+  }
+  .search__item:nth-child(n + 13) {
+    display: none;
+  }
+  .search__title {
+    margin-bottom: 24px;
+  }
+  .search__top {
+    margin-bottom: 40px;
+  }
+
+  .search__item .product-item .product-item__name {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+  }
+  .search__item .product-item__collection {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+  }
+  .search__item .product-item__img {
+    min-height: 260px;
+  }
+
+  .search__item--1 .product-item__img,
+  .search__item--6 .product-item__img,
+  .search__item--7 .product-item__img,
+  .search__item--12 .product-item__img {
+    height: 384.2px;
+  }
+
+  .search__item--2 .product-item__img,
+  .search__item--5 .product-item__img,
+  .search__item--8 .product-item__img,
+  .search__item--11 .product-item__img {
+    height: 260px;
+  }
+
+  .search__item--3 .product-item__img,
+  .search__item--4 .product-item__img,
+  .search__item--9 .product-item__img,
+  .search__item--10 .product-item__img {
+    height: 300px;
+  }
+
+  .search__item--1 {
+    grid-column: 1/18;
+    margin-right: -3%;
+  }
+
+  .search__item--2 {
+    margin-left: -2%;
+    margin-right: 0%;
+    grid-column: 21/34;
+  }
+
+  .search__item--3 {
+    margin-right: -3%;
+    margin-left: 0;
+    grid-column: 8/23;
+  }
+  .search__item--4 {
+    margin-right: 0;
+    margin-left: -3%;
+    grid-column: 26/41;
+  }
+
+  .search__item--5 {
+    grid-column: 1/14;
+  }
+  .search__item--6 {
+    grid-column: 16/34;
+    margin-left: 2%;
+  }
+
+  .search__item--7 {
+    grid-column: 8/26;
+    margin-right: 2%;
+  }
+
+  .search__item--8 {
+    margin: 0 0 0 -1%;
+    grid-column: 28/41;
+  }
+
+  .search__item--9 {
+    margin-right: -3%;
+    grid-column: 1/16;
+  }
+
+  .search__item--10 {
+    margin: 0 0 0 4%;
+    grid-column: 18/34;
+  }
+
+  .search__item--11 {
+    grid-column: 8/21;
+    margin: 0 -1% 0 0%;
+  }
+
+  .search__item--12 {
+    grid-column: 23/41;
+    margin: 0 0 0 2%;
+  }
+}
+
+@media (max-width: 800px) {
+  .search__inner {
+    margin-bottom: 136px;
+  }
+  .search__list {
+    margin-bottom: -2px;
+  }
+
+  .search .navigation__arrow--next {
+    margin-right: 0;
+  }
+  .search .navigation__arrow--prev {
+    margin-left: 0;
+  }
 }
