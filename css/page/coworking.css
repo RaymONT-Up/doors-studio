@@ -9,3 +9,14 @@
 .main--coworking {
   margin-top: 83px;
 }
+
+@media (max-width: 800px) {
+  .main--coworking {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .main--coworking {
+    margin-top: 15px;
+  }
+}

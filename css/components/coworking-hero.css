@@ -9,3 +9,35 @@
   max-height: 498px;
   margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+  .coworking-hero__inner {
+    margin-bottom: 79px;
+  }
+
+  .coworking-hero__title {
+    margin-bottom: 44px;
+
+    font-size: 54px;
+    line-height: 62px;
+  }
+}
+
+@media (max-width: 600px) {
+  .coworking-hero__inner {
+    margin-bottom: 43px;
+  }
+
+  .coworking-hero__title {
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 500px) {
+  .coworking-hero__img-wrapper {
+    height: 200px;
+  }
+}
