@@ -4,6 +4,19 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
 
   loop: true,
   allowTouchMove: false,
+  draggable: false,
+
+  breakpoints: {
+    600: {
+      slidesPerView: 5.45,
+    },
+    800: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5.45,
+    },
+  },
 });
 
 const coworkingRewiewsTextList = document.querySelectorAll(
@@ -31,8 +44,22 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
   },
 
   // Выключение перетаскивания мышью
-  allowTouchMove: false,
+  // allowTouchMove: false,
+  draggable: false,
+
+  breakpoints: {
+    600: {
+      slidesPerView: 5.37,
+      spaceBetween: 24,
+    },
+    800: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5.45,
+      spaceBetween: 30,
+    },
+  },
 });
 
 coworkingReviewsImgSlider.controller.control = coworkingReviewSlider;
-coworkingReviewSlider.controller.control = coworkingReviewsImgSlider;

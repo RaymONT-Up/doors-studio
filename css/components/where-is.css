@@ -45,3 +45,30 @@
   font-size: 20px;
   line-height: 140%;
 }
+
+@media (max-width: 800px) {
+  .where-is__inner {
+    margin-bottom: 63px;
+  }
+
+  .where-is__title {
+    margin-bottom: 26px;
+  }
+  .where-is__map-wrapper {
+    max-height: 315px;
+    margin-bottom: 20px;
+  }
+  .where-is__map {
+    max-width: 350px;
+  }
+
+  .where-is__info {
+    margin-top: 4.5%;
+    margin-left: 4%;
+    margin-right: 2%;
+  }
+
+  .where-is__link {
+    margin-bottom: 17px;
+  }
+}
