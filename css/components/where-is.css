@@ -1,0 +1,47 @@
+.where-is__inner {
+  margin-bottom: 208px;
+}
+.where-is__title {
+  margin-bottom: 116px;
+}
+.where-is__box {
+  max-width: 1163px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.where-is__info {
+  margin-top: 4.3%;
+  margin-left: 11.35%;
+  margin-right: 3%;
+}
+.where-is__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  margin-bottom: 20px;
+}
+
+.where-is__map {
+  width: 100%;
+  max-width: 500px;
+}
+.where-is__map-wrapper {
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.where-is__map-link {
+  font-size: 20px;
+  line-height: 140%;
+}

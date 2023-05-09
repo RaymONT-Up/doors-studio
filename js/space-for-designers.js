@@ -13,6 +13,8 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   },
   slidesOffsetAfter: 1,
 
+  allowTouchMove: false,
+
   on: {
     init: function () {
       if (window.innerWidth > 600) {

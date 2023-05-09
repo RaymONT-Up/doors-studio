@@ -1,0 +1,178 @@
+.coworking-reviews__inner {
+  margin-bottom: 50px;
+}
+.coworking-reviews__container {
+  max-width: 1266px;
+}
+.coworking-reviews__inner {
+  margin-right: -12%;
+}
+.coworking-reviews__title {
+  margin-bottom: 103px;
+}
+/* Текст отзыва */
+.coworking-reviews__slider-review {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 9.6%;
+}
+
+.coworking-reviews__item-review {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.coworking-reviews__item-review.swiper-slide-active {
+  opacity: 1;
+  min-width: 500px;
+  height: auto;
+
+  -webkit-animation-name: rewievText;
+
+  -moz-animation-name: rewievText;
+
+  -o-animation-name: rewievText;
+
+  animation-name: rewievText;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+.coworking-reviews__paragraph {
+  margin-bottom: 22px;
+}
+.coworking-reviews__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+}
+/* Картинкр */
+.coworking-reviews__slider {
+  margin-top: -7%;
+  padding-top: 14%;
+}
+.coworking-reviews__controlers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 768px;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.coworking-reviews__pagination {
+  width: auto;
+  font-size: 17px;
+  line-height: 141%;
+}
+
+.coworking-reviews__item {
+  height: 371px;
+
+  -webkit-transition: all, 0.5s;
+
+  -o-transition: all, 0.5s;
+
+  -moz-transition: all, 0.5s;
+
+  transition: all, 0.5s;
+}
+.coworking-reviews__item img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+
+  -webkit-transition: all, 1s;
+
+  -o-transition: all, 1s;
+
+  -moz-transition: all, 1s;
+
+  transition: all, 1s;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.coworking-reviews__item.swiper-slide-next {
+  min-width: 24.97%;
+  -webkit-transform: translateY(-44%);
+  -moz-transform: translateY(-44%);
+  -ms-transform: translateY(-44%);
+  -o-transform: translateY(-44%);
+  transform: translateY(-44%);
+  height: auto;
+}
+.coworking-reviews__item.swiper-slide-next img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+@-webkit-keyframes rewievText {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes rewievText {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes rewievText {
+  0% {
+    opacity: 0;
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes rewievText {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}

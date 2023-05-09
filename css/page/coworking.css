@@ -4,6 +4,8 @@
 @import "./../components/coworking-hero.css";
 @import "./../components/coworking-about.css";
 @import "./../components/coworking-for.css";
+@import "./../components/coworking-reviews.css";
+@import "./../components/where-is.css";
 .main--coworking {
   margin-top: 83px;
 }
