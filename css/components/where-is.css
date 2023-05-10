@@ -72,3 +72,25 @@
     margin-bottom: 17px;
   }
 }
+
+@media (max-width: 600px) {
+  .where-is__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .where-is__map {
+    max-width: 336px;
+    margin-left: auto;
+  }
+  .where-is__info {
+    margin: 0 0 15px 3%;
+  }
+  .where-is__map-wrapper {
+    height: 302.4px;
+  }
+}

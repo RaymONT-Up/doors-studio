@@ -7,6 +7,12 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
   draggable: false,
 
   breakpoints: {
+    0: {
+      slidesPerView: 1.65,
+      spaceBetween: 10,
+      centeredSlides: true,
+    },
+
     600: {
       slidesPerView: 5.45,
     },
@@ -48,7 +54,13 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
   draggable: false,
 
   breakpoints: {
-    600: {
+    0: {
+      slidesPerView: 1.65,
+      spaceBetween: 10,
+      centeredSlides: true,
+    },
+
+    701: {
       slidesPerView: 5.37,
       spaceBetween: 24,
     },
