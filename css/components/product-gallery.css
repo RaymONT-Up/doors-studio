@@ -11,6 +11,16 @@
   grid-auto-flow: row;
   grid-gap: 10px;
 }
+.product-gallery__item {
+  -webkit-transition: all, var(--transition-duration-hover);
+  -o-transition: all, var(--transition-duration-hover);
+  -moz-transition: all, var(--transition-duration-hover);
+  transition: all, var(--transition-duration-hover);
+}
+
+.product-gallery__item:hover {
+  opacity: 0.8;
+}
 .product-gallery__item--1 {
   grid-column: 41/67;
   margin: 0% -3% 0% 2%;
