@@ -3,8 +3,6 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
   slidesPerView: 5.45, //Слайдов показывает
 
   loop: true,
-  allowTouchMove: false,
-  draggable: false,
 
   breakpoints: {
     0: {
@@ -47,16 +45,12 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
     prevEl: ".coworking-reviews__slider-arrow--prev",
   },
 
-  // Выключение перетаскивания мышью
-  draggable: false,
-
   breakpoints: {
     0: {
       slidesPerView: 1.65,
       spaceBetween: 10,
       centeredSlides: true,
     },
-
     601: {
       slidesPerView: 4,
     },

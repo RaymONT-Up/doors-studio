@@ -1,6 +1,7 @@
 const spaceForDesignersPagination = document.querySelector(
   ".space-for-designers__pagination"
 );
+const sliderItem = document.querySelector(".space-for-designers__item");
 
 const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   slidesPerView: 5,
@@ -12,7 +13,8 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   },
   slidesOffsetAfter: 1,
 
-  draggable: false,
+  allowTouchMove: false,
+
   on: {
     init: function () {
       if (window.innerWidth > 600) {
@@ -62,6 +64,7 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
       spaceBetween: 10,
       slidesPerView: 1.15,
       centeredSlides: true,
+      allowTouchMove: true,
     },
     601: {
       spaceBetween: 10,

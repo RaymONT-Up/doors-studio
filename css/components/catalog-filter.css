@@ -521,7 +521,8 @@
     width: 100%;
     height: 112px;
   }
-  .catalog-filter__input-checkbox:checked
+  .catalog-filter__accordion-content--type
+    .catalog-filter__input-checkbox:checked
     ~ .catalog-filter__label-text
     .catalog-filter__label-text-icon {
     width: 10px;
@@ -627,17 +628,16 @@
     padding-bottom: 14px;
   }
 
-  /* ... как-то слишком много вложенности... */
   .catalog-filter__label--material
     .catalog-filter__input-checkbox:checked
     ~ .catalog-filter__label-text
     .catalog-filter__label-text-icon {
     margin-right: 4px;
-    -webkit-transform: scale(1.5) translate(0px, -1px);
-    -moz-transform: scale(1.5) translate(0px, -1px);
-    -ms-transform: scale(1.5) translate(0px, -1px);
-    -o-transform: scale(1.5) translate(0px, -1px);
-    transform: scale(1.5) translate(0px, -1px);
+    -webkit-transform: scale(1.2) translate(0px, 0px);
+    -moz-transform: scale(1.2) translate(0px, 0px);
+    -ms-transform: scale(1.2) translate(0px, 0px);
+    -o-transform: scale(1.2) translate(0px, 0px);
+    transform: scale(1.2) translate(0px, 0px);
   }
   .catalog-filter__label--material
     .catalog-filter__input-checkbox:checked
@@ -654,10 +654,15 @@
     width: 11px;
     height: 7.41px;
     margin-right: 2px;
-    -webkit-transform: scale(1) translate(-8px, 1px);
-    -moz-transform: scale(1) translate(-8px, 1px);
-    -ms-transform: scale(1) translate(-8px, 1px);
-    -o-transform: scale(1) translate(-8px, 1px);
+
+    -webkit-transform: scale(1.4) translate(-1px, -1px);
+
+    -moz-transform: scale(1.4) translate(-1px, -1px);
+
+    -ms-transform: scale(1.4) translate(-1px, -1px);
+
+    -o-transform: scale(1.4) translate(-1px, -1px);
+
     transform: scale(1.4) translate(-1px, -1px);
   }
 
