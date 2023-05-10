@@ -1,0 +1,19 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/category.css";
+@import "./../components/we-in-touch.css";
+.main--category {
+  margin-top: 83px;
+}
+
+@media (max-width: 800px) {
+  .main--category {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .main--category {
+    margin-top: 15px;
+  }
+}
