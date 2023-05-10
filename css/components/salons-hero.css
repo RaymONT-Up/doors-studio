@@ -8,3 +8,33 @@
   max-width: 1295px;
   margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+  .salons-hero__title {
+    font-size: 54px;
+    margin-bottom: 42px;
+  }
+  .salons-hero__img-wrapper {
+    height: 280px;
+  }
+}
+@media (max-width: 600px) {
+  .salons-hero__inner {
+    margin-bottom: 45px;
+  }
+
+  .salons-hero__title {
+    margin-bottom: 32px;
+
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .salons-hero__img-wrapper {
+    height: 230px;
+  }
+}
+@media (max-width: 460px) {
+  .salons-hero__img-wrapper {
+    height: 200px;
+  }
+}
