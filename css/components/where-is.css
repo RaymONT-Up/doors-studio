@@ -30,7 +30,9 @@
 
   margin-bottom: 20px;
 }
-
+.where-is__link::after {
+  bottom: -7px;
+}
 .where-is__map {
   width: 100%;
   max-width: 500px;
@@ -104,14 +106,20 @@
     margin-bottom: 60px;
   }
   .where-is__info {
-    margin: 0 -32px 15px 15.9%;
+    margin: 0 0 15px 15.9%;
   }
 
   .where-is__link {
+    padding-right: 0;
     margin-bottom: 15px;
 
     font-size: 17px;
     line-height: 24px;
+  }
+  .where-is__link::before {
+    content: none;
+    width: 0;
+    height: 0;
   }
 
   .where-is__map-link {

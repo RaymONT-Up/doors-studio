@@ -1,7 +1,6 @@
 const spaceForDesignersPagination = document.querySelector(
   ".space-for-designers__pagination"
 );
-const sliderItem = document.querySelector(".space-for-designers__item");
 
 const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   slidesPerView: 5,

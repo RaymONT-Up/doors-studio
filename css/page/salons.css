@@ -1,0 +1,21 @@
+@import "./../components/header.css";
+@import "./../components/footer-contact.css";
+
+@import "./../components/salons-hero.css";
+@import "./../components/salons-about.css";
+@import "./../components/where-is.css";
+
+.main--salons {
+  margin-top: 83px;
+}
+
+@media (max-width: 800px) {
+  .main--salons {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .main--salons {
+    margin-top: 15px;
+  }
+}

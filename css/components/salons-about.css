@@ -1,0 +1,29 @@
+.salons-about__inner {
+  margin-bottom: 226px;
+}
+.salons-about__title {
+  margin-bottom: 152px;
+}
+.salons-about__list {
+  display: grid;
+  grid-template-columns: repeat(100, 1fr);
+  grid-gap: 156px 10px;
+}
+.salons-about__img-wrapper {
+  margin-bottom: 32px;
+}
+.salons-about__subtitle {
+  margin-bottom: 16px;
+}
+.salons-about__item--1 {
+  margin-right: 2%;
+  grid-column: 1/41;
+}
+.salons-about__item--2 {
+  margin-top: 16%;
+  grid-column: 62/101;
+}
+.salons-about__item--3 {
+  margin-left: 0.7%;
+  grid-column: 31/101;
+}
