@@ -94,3 +94,27 @@
     height: 302.4px;
   }
 }
+
+@media (max-width: 460px) {
+  .where-is__title {
+    margin-bottom: 32px;
+  }
+
+  .where-is__inner {
+    margin-bottom: 60px;
+  }
+  .where-is__info {
+    margin: 0 -32px 15px 15.9%;
+  }
+
+  .where-is__link {
+    margin-bottom: 15px;
+
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .where-is__map-link {
+    font-size: 17px;
+  }
+}

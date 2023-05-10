@@ -156,70 +156,17 @@
   }
 }
 
-@media (max-width: 900px) {
-  .coworking-reviews__title {
-    margin-bottom: 45px;
-  }
-
-  .coworking-reviews__paragraph {
-    font-size: 15px;
-    line-height: 133%;
-    margin-bottom: 16px;
-  }
-  .coworking-reviews__slider-review {
-    margin-right: 5.45%;
-    max-width: 47%;
-    /* 343px */
-  }
-
-  /* img slide */
-  .coworking-reviews__slider {
-    margin-right: -20px;
-    padding-right: 20px;
-    margin-top: 10.5%;
-    padding-top: 20.8%;
-  }
-
-  .coworking-reviews__controlers {
-    margin-bottom: 8px;
-    max-width: 49.8%;
-  }
-  .coworking-reviews__pagination {
-    font-size: 13px;
-    line-height: 138%;
-    margin-right: 7.7%;
-  }
-  .coworking-reviews__list {
-    /* -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -moz-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end; */
-  }
-  .coworking-reviews__item {
-    height: 182px;
-  }
-  .coworking-reviews__item.swiper-slide-next {
-    min-width: 27.5%;
-
-    -webkit-transform: translateY(-51.5%) scaleY(1.15);
-
-    -moz-transform: translateY(-51.5%) scaleY(1.15);
-
-    -ms-transform: translateY(-51.5%) scaleY(1.15);
-
-    -o-transform: translateY(-51.5%) scaleY(1.15);
-
-    transform: translateY(-51.5%) scaleY(1.15);
-  }
-}
 @media (max-width: 800px) {
   .coworking-reviews__inner {
     margin-bottom: 9px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+  .coworking-reviews__inner {
+    margin-bottom: 41px;
+  }
+
   .coworking-reviews__title {
     margin-bottom: 32px;
   }
@@ -278,6 +225,7 @@
     text-align: center;
     margin: 0 20px;
     width: 100%;
+    font-size: 13px;
   }
 
   .coworking-reviews__slider-arrows {

@@ -13,12 +13,10 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
       centeredSlides: true,
     },
 
-    600: {
-      slidesPerView: 5.45,
-    },
-    800: {
+    601: {
       slidesPerView: 4,
     },
+
     1200: {
       slidesPerView: 5.45,
     },
@@ -50,7 +48,6 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
   },
 
   // Выключение перетаскивания мышью
-  // allowTouchMove: false,
   draggable: false,
 
   breakpoints: {
@@ -60,13 +57,10 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
       centeredSlides: true,
     },
 
-    701: {
-      slidesPerView: 5.37,
-      spaceBetween: 24,
-    },
-    800: {
+    601: {
       slidesPerView: 4,
     },
+
     1200: {
       slidesPerView: 5.45,
       spaceBetween: 30,
