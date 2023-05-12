@@ -1,5 +1,5 @@
 Fancybox.bind('[data-fancybox="gallery"]', {
-  idle: false,
+  // idle: false,
 
   Thumbs: {
     type: false,

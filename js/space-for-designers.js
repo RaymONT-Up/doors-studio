@@ -13,50 +13,59 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   },
   slidesOffsetAfter: 1,
 
-  allowTouchMove: false,
+  loop: true,
+  // allowTouchMove: false,
+
+  pagination: {
+    el: ".space-for-designers__pagination",
+    type: "fraction",
+    renderFraction: function (current, total) {
+      return `
+         <span class="swiper-pagination-current">${current}</span> из
+         <span class="swiper-pagination-total">${total}</span> Фото
+      `;
+    },
+  },
 
   on: {
-    init: function () {
-      if (window.innerWidth > 600) {
-        const activeIndex = 4 + this.activeIndex;
-        const totalSlides = this.slides.length;
-        spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-
-        // Получаю ширину и маргин элемента дабы задать отступ в слайдере(без этого последний слайд не будет видно)
-        // После эо значение записывается в свойство объекта swiper в виде offset
-        const sliderItemWidth = parseFloat(
-          sliderItem.style.cssText.split(";")[0].split(" ")[1]
-        );
-        const sliderItemMargin = parseFloat(
-          sliderItem.style.cssText.split(";")[0].split(" ")[1]
-        );
-        const offset = (sliderItemWidth + sliderItemMargin) * 2;
-        this.params.slidesOffsetAfter = offset;
-        this.update();
-      } else {
-        const activeIndex = 1 + this.activeIndex;
-        const totalSlides = this.slides.length;
-        spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-      }
-    },
-    slideChange: function () {
-      if (window.innerWidth > 600) {
-        const activeIndex = 4 + this.activeIndex;
-        const totalSlides = this.slides.length;
-        spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-
-        // Запрет слайда когда мы подходим к последнему с конца -3 слайду
-        if (activeIndex === totalSlides + 1) {
-          this.slidePrev();
-          return;
-        }
-      } else {
-        const activeIndex = 1 + this.activeIndex;
-        const totalSlides = this.slides.length;
-
-        spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-      }
-    },
+    // init: function () {
+    //   if (window.innerWidth > 600) {
+    //     const activeIndex = 4 + this.activeIndex;
+    //     const totalSlides = this.slides.length;
+    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
+    //     // Получаю ширину и маргин элемента дабы задать отступ в слайдере(без этого последний слайд не будет видно)
+    //     // После эо значение записывается в свойство объекта swiper в виде offset
+    //     const sliderItemWidth = parseFloat(
+    //       sliderItem.style.cssText.split(";")[0].split(" ")[1]
+    //     );
+    //     const sliderItemMargin = parseFloat(
+    //       sliderItem.style.cssText.split(";")[0].split(" ")[1]
+    //     );
+    //     const offset = (sliderItemWidth + sliderItemMargin) * 2;
+    //     this.params.slidesOffsetAfter = offset;
+    //     this.update();
+    //   } else {
+    //     const activeIndex = 1 + this.activeIndex;
+    //     const totalSlides = this.slides.length;
+    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
+    //   }
+    // },
+    // slideChange: function () {
+    //   if (window.innerWidth > 600) {
+    //     const activeIndex = 4 + this.activeIndex;
+    //     const totalSlides = this.slides.length;
+    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
+    //     // Запрет слайда когда мы подходим к последнему с конца -3 слайду
+    //     // if (activeIndex === totalSlides + 1) {
+    //     //   this.slidePrev();
+    //     //   return;
+    //     // }
+    //   } else {
+    //     const activeIndex = 1 + this.activeIndex;
+    //     const totalSlides = this.slides.length;
+    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
+    //   }
+    // },
   },
 
   breakpoints: {

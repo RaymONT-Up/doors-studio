@@ -244,11 +244,20 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  .product__info {
+    margin-left: 1%;
+    min-width: 540px;
+  }
   .product__img-wrapper {
     padding: 20px;
   }
+  .product__img {
+    max-width: 300.89px;
+    max-height: 700px;
+  }
 }
+
 @media (max-width: 800px) {
   .product__inner {
     padding-bottom: 39px;

@@ -3,6 +3,7 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
   slidesPerView: 5.45, //Слайдов показывает
 
   loop: true,
+  allowTouchMove: false,
 
   breakpoints: {
     0: {
@@ -63,3 +64,4 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
 });
 
 coworkingReviewsImgSlider.controller.control = coworkingReviewSlider;
+coworkingReviewSlider.controller.control = coworkingReviewsImgSlider;
