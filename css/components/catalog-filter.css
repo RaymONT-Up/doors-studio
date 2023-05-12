@@ -491,6 +491,17 @@
   min-width: 100%;
 }
 
+.catalog-filter__selectors .select.select--active {
+  background-color: var(--color-3);
+}
+.catalog-filter__selectors .select--active .select-selected {
+  color: var(--color-1);
+}
+.catalog-filter .select--active .select-selected::after {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
 @media (max-width: 769px) {
   .catalog-filter__body {
     max-width: 620px;

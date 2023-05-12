@@ -3,6 +3,7 @@
 const customSelect = (select, count) => {
   x = document.getElementsByClassName(select);
   l = x.length;
+
   for (i = 0; i < l; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
     ll = selElmnt.length;
@@ -27,10 +28,18 @@ const customSelect = (select, count) => {
       c.addEventListener("click", function (e) {
         /* When an item is clicked, update the original select box,
                 and the selected item: */
+
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
         h = this.parentNode.previousSibling;
+
+        // if a selective element was made, then a class is produced
+        var wrapper = this.parentNode.parentNode;
+        wrapper.classList.add("select--active");
+        firstClick = false;
+        console.log("t");
+
         for (i = 0; i < sl; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
             s.selectedIndex = i;
@@ -90,8 +99,13 @@ const customSelect = (select, count) => {
   document.addEventListener("click", closeAllSelect);
 
   // init click for each first items of select-items
+  // document.querySelectorAll(".select-items").forEach(select => {
+  //   select.children[0].click();
+  // });
+
+  // I hide the first element that plays the role of a name with value=none
   document.querySelectorAll(".select-items").forEach(select => {
-    select.children[0].click();
+    select.children[0].style.display = "none";
   });
 };
 customSelect("select", 0);
