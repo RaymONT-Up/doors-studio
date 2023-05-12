@@ -45,11 +45,64 @@
   flex-direction: column;
 }
 .we-in-touch__label {
+  position: relative;
   margin-bottom: 19px;
 }
 
 .we-in-touch__input {
   margin-top: 7px;
+}
+
+/* active state */
+.we-in-touch__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
+}
+.we-in-touch__input:focus + .we-in-touch__text,
+.we-in-touch__input:not(:placeholder-shown) + .we-in-touch__text {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+
+  font-size: 13px;
+  line-height: 138%;
+
+  opacity: 0.5;
+}
+/* error state */
+.we-in-touch__error {
+  display: none;
+  margin-top: 6px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138%;
+
+  color: var(--color-error);
+}
+.we-in-touch__label--invalid .we-in-touch__input {
+  border-color: var(--color-error);
+}
+.we-in-touch__label--invalid .we-in-touch__error {
+  display: inline-block;
 }
 
 .we-in-touch__img {

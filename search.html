@@ -2404,17 +2404,24 @@
               <form action="#" class="we-in-touch__form">
                 <label class="we-in-touch__label">
                   <input
-                    class="we-in-touch__input input"
+                    class="we-in-touch__input input title--5"
+                    placeholder=" "
                     type="text"
-                    placeholder="Имя"
                   />
+                  <span class="we-in-touch__text title--5">Имя</span>
                 </label>
-                <label class="we-in-touch__label">
+                <label class="we-in-touch__label we-in-touch__label--invalid">
                   <input
-                    class="we-in-touch__input input"
+                    class="we-in-touch__input input title--5"
+                    placeholder=" "
                     type="tel"
-                    placeholder="Телефон"
+                    value="900 252 12 22"
                   />
+
+                  <span class="we-in-touch__text title--5">Телефон</span>
+                  <span class="we-in-touch__error">
+                    Неверный формат номера телефона
+                  </span>
                 </label>
                 <input
                   class="we-in-touch__btn btn-background"
