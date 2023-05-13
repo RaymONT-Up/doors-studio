@@ -10,7 +10,7 @@
 @import "./../components/we-in-touch.css";
 
 @import "./../components/pre-order-popup.css";
-
+@import "./../components/form-state.css";
 .main--product {
   margin-top: 91px;
 }
