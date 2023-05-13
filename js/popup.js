@@ -3,13 +3,14 @@ let popup = document.querySelectorAll(".popup");
 let popupClose = document.querySelectorAll(".popupClose");
 let popupOverlay = document.querySelectorAll(".popupOverlay");
 let popupWindow = document.querySelectorAll(".popupWindow");
-let popupLink = document.querySelectorAll('[data-popup="pre-order]');
+let popupLinks = document.querySelectorAll("[data-popup]");
 
 if (popup) {
   const closePopup = (el, timer = 0) => {
     setTimeout(() => {
       for (elem of el) {
         elem.addEventListener("click", e => {
+          console.log(e);
           e.currentTarget.closest(".popup").classList.remove("active");
         });
       }
@@ -19,12 +20,15 @@ if (popup) {
   closePopup(popupClose);
 }
 
-// const activePopup = el => {
-//   let popupActivated = document.querySelector(el);
-//   el.classList.add("active");
-// };
-// if (popupLink) {
-//   for (elem of popupLink) {
-//     elem.addEventListener("click", activePopup);
-//   }
-// }
+const activePopup = eId => {
+  let popupActivated = document.querySelector(eId);
+  popupActivated.classList.add("active");
+};
+if (popupLinks) {
+  popupLinks.forEach(popupLink => {
+    popupLink.addEventListener("click", e => {
+      e.preventDefault();
+      activePopup(`#${popupLink.dataset.popup}`);
+    });
+  });
+}

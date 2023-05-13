@@ -2337,13 +2337,115 @@
       </div>
     </footer>
 
-    <div class="pre-order popup">
-      <div class="pre-order__overlay popupOverlay">
-        <div class="pre-order__window popupWindow"></div>
+    <div class="pre-order popup" id="pre-order">
+      <div class="pre-order__window popupWindow">
+        <button class="popupClose">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.00098 5L19 18.9991"
+              stroke="#282828"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4.99996 18.9991L18.999 5"
+              stroke="#282828"
+              stroke-width="1.5"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <p class="pre-order__title popupTitle">Предварительный заказ</p>
+        <p class="pre-order__paragraph">
+          Проверьте параметры предварительного заказа, заполните форму и
+          отправьте заявку
+        </p>
+        <div class="pre-order__info">
+          <p class="pre-order__subtitle popupSubtitle">Состав заказа:</p>
+          <div class="pre-order__box">
+            <div class="pre-order__img-wrapper">
+              <img
+                src="./img/product/product-door-min.jpg"
+                alt="Картинка"
+                class="pre-order__img"
+              />
+            </div>
+            <ul class="pre-order__list">
+              <li class="pre-order__item pre-order__item--name title--5">
+                Межкомнатная дверь Profildoors Ying
+              </li>
+              <li class="pre-order__item">
+                <div class="pre-order__key">Размер полотна:</div>
+                <div class="pre-order__value">600x2000 мм.</div>
+              </li>
+              <li class="pre-order__item">
+                <div class="pre-order__key">Цвет:</div>
+                <div class="pre-order__value pre-order__value--color">
+                  Дуб шампань
+                </div>
+              </li>
+              <li class="pre-order__item">
+                <div class="pre-order__key">Цена:</div>
+                <div class="pre-order__value">36 699 ₽</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form action="#" class="pre-order__form">
+          <p class="pre-order__subtitle popupSubtitle">
+            Данные для обратной связи:
+          </p>
+          <div class="pre-order__inputs">
+            <input
+              class="pre-order__input input"
+              type="name"
+              name="name"
+              placeholder="Имя"
+            />
+            <input
+              class="pre-order__input input"
+              type="tel"
+              name="tel"
+              placeholder="Телефон"
+            />
+            <input
+              class="pre-order__input input"
+              type="email"
+              name="email"
+              placeholder="Почта"
+            />
+          </div>
+          <label class="pre-order__policy label-input-radio">
+            <input class="input-radio" type="radio" name="policy" />
+            <span class="input-radio-custom pre-order__radio"></span>
+            <span class="pre-order__policy-text">
+              Нажимая на кнопку «Отправить» вы соглашаетесь с
+              <a href="#">политикой обработки персональных данных компании</a>
+            </span>
+          </label>
+          <input
+            class="pre-order__submit btn-background"
+            value="Оформить предварительный заказ"
+            type="submut"
+          />
+        </form>
       </div>
+      <div class="pre-order__overlay popupOverlay"></div>
     </div>
 
     <script src="./js/header.js"></script>
+
+    <script src="./js/popup.js"></script>
 
     <!-- select -->
     <script src="./js/select.js"></script>

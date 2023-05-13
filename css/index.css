@@ -1,5 +1,6 @@
 @import "./libs/reset.css";
 @import "./vars.css";
+@import "./components/UI/popup.css";
 
 /* Fonts */
 @font-face {
@@ -1547,6 +1548,9 @@ img {
     top: 30px;
     right: 30px;
   }
+  .fancybox__container {
+    --fancybox-bg: rgba(var(--color-1-RGB), 0.84);
+  }
   .f-button.is-prev {
     margin-left: 0;
     width: 40px;
@@ -1624,17 +1628,21 @@ img {
     text-align: center;
     margin-bottom: 20px;
   }
-
+  .is-compact .fancybox__footer {
+    background-color: rgba(24, 24, 27, 0.2);
+  }
   /* fancybox */
   .is-horizontal .fancybox__nav .f-button.is-prev {
-    top: 80%;
+    top: auto;
+    bottom: 0;
     left: 40%;
     min-height: 100px;
     height: auto;
   }
 
   .is-horizontal .fancybox__nav .f-button.is-next {
-    top: 80%;
+    top: auto;
+    bottom: 0;
     right: 40%;
     min-height: 100px;
     height: auto;
@@ -1680,13 +1688,16 @@ img {
   }
 
   .is-horizontal .fancybox__nav .f-button.is-prev {
-    top: 90%;
     left: 30%;
   }
 
   .is-horizontal .fancybox__nav .f-button.is-next {
-    top: 90%;
+    top: auto;
+
     right: 30%;
+  }
+  .is-compact .fancybox__footer .fancybox__caption {
+    margin-bottom: 0;
   }
 }
 
