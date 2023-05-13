@@ -32,9 +32,6 @@
 
 .pre-order__title {
   margin-bottom: 16px;
-
-  font-size: 32px;
-  line-height: 119%;
 }
 .pre-order__paragraph {
   max-width: 420px;
@@ -158,4 +155,59 @@
   max-width: 360px;
 
   margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .pre-order__submit {
+    padding: 16px 12px;
+    max-width: 100%;
+  }
+
+  .pre-order__subtitle {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .pre-order__img {
+    width: 30px;
+    height: 70px;
+  }
+  .pre-order__img-wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-right: 17px;
+    padding: 5px 15px;
+    width: 60px;
+    height: 80px;
+  }
+
+  .pre-order__item--name {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 141%;
+  }
+  .pre-order__key {
+    margin-right: 8px;
+  }
+  .pre-order__value--color::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+  }
+  .pre-order__inputs {
+    margin-bottom: 20px;
+  }
+  .pre-order__input {
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 14px;
+  }
+
+  .pre-order__policy-text {
+    font-size: 13px;
+    line-height: 18px;
+    /* or 138% */
+  }
 }

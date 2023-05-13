@@ -1,41 +1,24 @@
 .popup {
   position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-
   opacity: 0;
   visibility: hidden;
-
-  padding: 10px;
-
-  display: -webkit-box;
-
-  display: -webkit-flex;
-
-  display: -moz-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   -webkit-transition: all, var(--transition-duration-hover);
-  -o-transition: all, var(--transition-duration-hover);
-  -moz-transition: all, var(--transition-duration-hover);
-  transition: all, var(--transition-duration-hover);
 
-  overflow-y: auto;
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
 }
 .popup.active {
   opacity: 1;
@@ -52,19 +35,41 @@
   background: rgba(var(--color-1-RGB), 0.7);
 }
 .popupWindow {
+  position: relative;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 10;
+}
+.popupBody {
+  position: relative;
+  z-index: 10;
   padding: 24px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
-  position: relative;
-  z-index: 10;
   max-width: 592px;
   width: 100%;
 
   background-color: var(--color-4);
 }
-
 .popupClose {
   position: absolute;
   top: 21px;
@@ -83,4 +88,22 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
+}
+
+@media (max-width: 600px) {
+  .popupWindow {
+    padding: 0;
+  }
+  .popupBody {
+    min-height: 100vh;
+    padding: 52px 20px 78px 12px;
+  }
+  .popupTitle {
+    font-size: 24px;
+    line-height: 133%;
+  }
+  .popupClose {
+    right: 10px;
+    top: 3px;
+  }
 }

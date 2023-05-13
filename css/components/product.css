@@ -548,6 +548,7 @@
 
   .product__set-list {
     grid-gap: 20px 32px;
+    grid-template-columns: 1fr 1fr;
     max-width: 391px;
     margin-bottom: 22px;
   }
