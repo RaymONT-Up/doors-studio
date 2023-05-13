@@ -1,5 +1,5 @@
 @import "./product-item.css";
-
+/*         <!-- Products-grid - отдельный css компонент отвечающий за dekstop разметку элементов в сетке для dekstop версии, а other-collection__item--index отвечает за адаптпив отдельно под каждый блок. Т.к у одинаковой сетки products-grid разный адаптив  --> */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(40, 1fr);

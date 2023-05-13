@@ -1066,6 +1066,8 @@
                         </label>
                       </li>
                     </ul>
+
+                    <!-- При нажатии на "свой размер" данный элемент получает значение active и показывает селекторы с размерами -->
                     <ul class="product-size__list--mine">
                       <li>
                         <div class="label select product-size__select">
@@ -1286,6 +1288,7 @@
                       <li class="product__set-item">Наличники</li>
                     </ul>
 
+                    <!-- через data-popup открывает popup c id pre-order -->
                     <input
                       data-popup="pre-order"
                       type="submit"
@@ -1335,6 +1338,9 @@
         </div>
       </section>
 
+      <!-- Галерея проекта.
+      Картинки с индексом больше 9 скрываются не структурная сетка не поломалась, НО при открытии галереи при нажатии на картинку, то остальные скрыты картинки можно будет увидеть в всплывающей галереи, которая сделана через fancybox.
+      -->
       <section class="product-gallery">
         <div class="container--2">
           <div class="product-gallery__inner">
@@ -1781,6 +1787,7 @@
             <div class="other-collection__title title--2">
               Межкомнатные двери других коллекций
             </div>
+            <!-- Products-grid - отдельный css компонент отвечающий за dekstop разметку элементов в сетке для dekstop версии, а other-collection__item--index отвечает за адаптпив отдельно под каждый блок. Т.к у одинаковой сетки products-grid разный адаптив  -->
             <ul class="other-collection__list products-grid">
               <li
                 class="other-collection__item other-collection__item--1 products-grid__item--1"
@@ -2338,6 +2345,8 @@
       </div>
     </footer>
 
+    <!-- Модальные окна -->
+    <!-- Открываются через нажатие на элементы сdata-popup="popup-id" -->
     <div class="popup" id="pre-order">
       <div class="pre-order__window popupWindow">
         <div class="popupBody">

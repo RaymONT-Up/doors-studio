@@ -1,9 +1,10 @@
+// ВАЖНО - у слайдеров должны быть одинаковые свойства slidesPerView, loop, centeredSlides и т.д. дабы слайды показывались корректно относительно соотношения текста к картинке
+
+// Слайдер текста
 const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
-  // slidesPerView: 1,
   slidesPerView: 5.45, //Слайдов показывает
 
-  loop: true,
-  allowTouchMove: false,
+  loop: true, // бесконечный
 
   breakpoints: {
     0: {
@@ -22,9 +23,7 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
   },
 });
 
-const coworkingRewiewsTextList = document.querySelectorAll(
-  ".coworking-reviews__item-review"
-);
+// Слайдер картинок
 const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
   slidesPerView: 5.45, //Слайдов показывает
   spaceBetween: 30, // Отступы между слайдами
@@ -62,6 +61,6 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
     },
   },
 });
-
+// Соединение управления слайдеров
 coworkingReviewsImgSlider.controller.control = coworkingReviewSlider;
 coworkingReviewSlider.controller.control = coworkingReviewsImgSlider;

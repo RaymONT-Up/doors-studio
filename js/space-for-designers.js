@@ -1,21 +1,22 @@
-const spaceForDesignersPagination = document.querySelector(
-  ".space-for-designers__pagination"
-);
-const sliderItem = document.querySelector(".space-for-designers__item");
-
 const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
+  // Колво слайдов в контейнере
   slidesPerView: 5,
+  // Всего на экране 4 слайда, но т.к один слайд занимает размер двух слайдов, то slidesPerView = 5, и с помощью swiper-slide-next для слайда по дизайну задается размер в процентах, который равен размеру ~ 2 слайдов.
+  //
 
+  // Отступы между слайдами
   spaceBetween: 30,
+
+  // Стрелки для навигации
   navigation: {
     nextEl: ".space-for-designers__slider-arrow--next",
     prevEl: ".space-for-designers__slider-arrow--prev",
   },
-  slidesOffsetAfter: 1,
 
+  // Бесконечные слайды
   loop: true,
-  // allowTouchMove: false,
 
+  // Пагинация
   pagination: {
     el: ".space-for-designers__pagination",
     type: "fraction",
@@ -27,53 +28,13 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
     },
   },
 
-  on: {
-    // init: function () {
-    //   if (window.innerWidth > 600) {
-    //     const activeIndex = 4 + this.activeIndex;
-    //     const totalSlides = this.slides.length;
-    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-    //     // Получаю ширину и маргин элемента дабы задать отступ в слайдере(без этого последний слайд не будет видно)
-    //     // После эо значение записывается в свойство объекта swiper в виде offset
-    //     const sliderItemWidth = parseFloat(
-    //       sliderItem.style.cssText.split(";")[0].split(" ")[1]
-    //     );
-    //     const sliderItemMargin = parseFloat(
-    //       sliderItem.style.cssText.split(";")[0].split(" ")[1]
-    //     );
-    //     const offset = (sliderItemWidth + sliderItemMargin) * 2;
-    //     this.params.slidesOffsetAfter = offset;
-    //     this.update();
-    //   } else {
-    //     const activeIndex = 1 + this.activeIndex;
-    //     const totalSlides = this.slides.length;
-    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-    //   }
-    // },
-    // slideChange: function () {
-    //   if (window.innerWidth > 600) {
-    //     const activeIndex = 4 + this.activeIndex;
-    //     const totalSlides = this.slides.length;
-    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-    //     // Запрет слайда когда мы подходим к последнему с конца -3 слайду
-    //     // if (activeIndex === totalSlides + 1) {
-    //     //   this.slidePrev();
-    //     //   return;
-    //     // }
-    //   } else {
-    //     const activeIndex = 1 + this.activeIndex;
-    //     const totalSlides = this.slides.length;
-    //     spaceForDesignersPagination.textContent = `${activeIndex} из ${totalSlides} фото`;
-    //   }
-    // },
-  },
-
+  // Свойства для адаптива mobile first
   breakpoints: {
     0: {
       spaceBetween: 10,
       slidesPerView: 1.15,
+      // Центрирование активного слайда
       centeredSlides: true,
-      allowTouchMove: true,
     },
     601: {
       spaceBetween: 10,
@@ -87,6 +48,5 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
       spaceBetween: 30,
       slidesPerView: 5,
     },
-    1000: {},
   },
 });

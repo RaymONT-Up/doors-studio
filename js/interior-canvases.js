@@ -1,7 +1,3 @@
-const interiorCanvasesPagination = document.querySelector(
-  ".interior-canvases__pagination"
-);
-
 const interiorCanvasesSlider = new Swiper(".interior-canvases__slider", {
   slidesPerView: 3,
   spaceBetween: 30,

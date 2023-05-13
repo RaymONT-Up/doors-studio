@@ -598,6 +598,10 @@ img {
 }
 
 /* gallery */
+
+.fancybox__container {
+  --fancybox-bg: rgba(var(--color-1-RGB), 0.84);
+}
 .gallery__close-btn.is-close-btn {
   position: absolute;
   width: 30px;
@@ -639,7 +643,18 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.fancybox__caption {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
 
+  text-align: center;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+  -moz-font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
 .is-prev:hover:not([disabled]),
 .is-next:hover:not([disabled]) {
   background-color: transparent;
@@ -1548,9 +1563,7 @@ img {
     top: 30px;
     right: 30px;
   }
-  .fancybox__container {
-    --fancybox-bg: rgba(var(--color-1-RGB), 0.84);
-  }
+
   .f-button.is-prev {
     margin-left: 0;
     width: 40px;

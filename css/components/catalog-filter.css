@@ -379,7 +379,7 @@
 }
 
 /* Материал */
-.catalog-filter__accordion-content--material {
+.catalog-filter__accordion-content--checkboxs {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -396,7 +396,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.catalog-filter__label--material {
+.catalog-filter__label--checkboxs {
   padding: 12px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -406,11 +406,11 @@
 
   border: 1px solid transparent;
 }
-.catalog-filter__label--material .catalog-filter__label-text {
+.catalog-filter__label--checkboxs .catalog-filter__label-text {
   font-size: 15px;
   line-height: 133%;
 }
-.catalog-filter__label--material
+.catalog-filter__label--checkboxs
   .catalog-filter__input-checkbox:checked
   + .catalog-filter__input-custom-checkbox {
   background-color: var(--color-4);
@@ -612,12 +612,12 @@
     height: 150px;
     max-height: 150px;
   }
-  .catalog-filter__label--material {
+  .catalog-filter__label--checkboxs {
     padding: 8px;
     margin-right: 14px;
     margin-bottom: 14px;
   }
-  .catalog-filter__label--material .catalog-filter__label-text {
+  .catalog-filter__label--checkboxs .catalog-filter__label-text {
     font-size: 13px;
     line-height: 138%;
   }
@@ -639,7 +639,7 @@
     padding-bottom: 14px;
   }
 
-  .catalog-filter__label--material
+  .catalog-filter__label--checkboxs
     .catalog-filter__input-checkbox:checked
     ~ .catalog-filter__label-text
     .catalog-filter__label-text-icon {
@@ -650,7 +650,7 @@
     -o-transform: scale(1.2) translate(0px, 0px);
     transform: scale(1.2) translate(0px, 0px);
   }
-  .catalog-filter__label--material
+  .catalog-filter__label--checkboxs
     .catalog-filter__input-checkbox:checked
     ~ .catalog-filter__label-text
     .catalog-filter__label-text-icon {
