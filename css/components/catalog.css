@@ -298,7 +298,7 @@
     display: none;
   }
 
-  .catalog__filter-btn-reset {
+  .catalog .catalog__filter-btn-reset {
     display: none;
   }
   .catalog__filter-quantity {
