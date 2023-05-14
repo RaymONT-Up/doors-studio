@@ -2243,7 +2243,8 @@
               </ul>
             </div>
 
-            <div class="catalog__top">
+            <!-- При классе filter--active появляется filter-quantity и filter-btn-reset(в случае если фильтры приняты) -->
+            <div class="catalog__top catalog__filter--active">
               <p class="catalog__quantity">112 товаров</p>
               <div class="catalog__controllers">
                 <div class="label select">
@@ -2261,7 +2262,9 @@
 
                 <button class="catalog__filter-btn js-filter-btn-open">
                   Фильтр
+                  <span class="catalog__filter-quantity">5</span>
                 </button>
+                <button class="catalog__filter-btn-reset">Очистить</button>
               </div>
             </div>
             <ul class="catalog__list products-grid">

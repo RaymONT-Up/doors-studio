@@ -36,3 +36,9 @@
   margin: 0 auto;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .form-state__icon {
+    width: 40px;
+    height: 40px;
+  }
+}

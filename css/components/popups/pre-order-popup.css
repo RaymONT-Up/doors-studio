@@ -158,6 +158,9 @@
 }
 
 @media (max-width: 600px) {
+  .pre-order {
+    padding: 52px 20px 78px 12px;
+  }
   .pre-order__submit {
     padding: 16px 12px;
     max-width: 100%;
@@ -211,7 +214,6 @@
     /* or 138% */
   }
 
-  .pre-order__radio{
-    
+  .pre-order__radio {
   }
 }
