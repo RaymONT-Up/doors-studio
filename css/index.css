@@ -1127,6 +1127,7 @@ img {
 }
 
 .preview-card__link-img {
+  margin-bottom: 6px;
   width: 16px;
   min-width: 16px;
   min-height: 16px;
