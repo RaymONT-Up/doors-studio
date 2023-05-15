@@ -44,6 +44,7 @@
   opacity: 1;
   visibility: visible;
 }
+
 .menu__header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,6 +99,14 @@
 .menu__title,
 .menu__subtitle {
   margin-bottom: 33px;
+}
+
+.menu__header-logo svg {
+  width: 120px;
+  height: 46px;
+}
+.menu__header-logo use {
+  fill: red;
 }
 
 .menu__list {

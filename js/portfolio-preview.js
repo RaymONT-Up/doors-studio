@@ -1,6 +1,6 @@
 const portfolioPreviewSlider = new Swiper(".portfolio-preview__slider", {
   slidesPerView: "auto",
-  spaceBetween: 64,
+  spaceBetween: 65,
   breakpoints: {
     300: {
       spaceBetween: 16,
@@ -9,7 +9,7 @@ const portfolioPreviewSlider = new Swiper(".portfolio-preview__slider", {
       spaceBetween: 24,
     },
     1000: {
-      spaceBetween: 64,
+      spaceBetween: 65,
     },
   },
 });

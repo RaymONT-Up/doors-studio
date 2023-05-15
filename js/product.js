@@ -1,7 +1,15 @@
-const mineSize = document.querySelector(".product__mine-size");
+const sizesContainer = document.querySelector(".product__size-list");
 const mineSizeSelectsWrapper = document.querySelector(
   ".product-size__list--mine"
 );
-mineSize.addEventListener("click", () => {
-  mineSizeSelectsWrapper.classList.add("active");
+
+sizesContainer.addEventListener("click", e => {
+  const target = e.target.closest(".product__label");
+  if (target === null || target === undefined) return;
+
+  if (target.querySelector(".input-radio").value === "custom") {
+    mineSizeSelectsWrapper.classList.add("active");
+  } else {
+    mineSizeSelectsWrapper.classList.remove("active");
+  }
 });
