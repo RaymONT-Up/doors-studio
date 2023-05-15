@@ -66,10 +66,12 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+  padding: 0 20px;
+  max-width: 1600px;
 }
 .menu__container {
   overflow-y: auto;
-  padding-right: 10px;
   width: 100%;
   margin-bottom: 80px;
 
@@ -78,6 +80,9 @@
   -moz-box-sizing: border-box;
 
   box-sizing: border-box;
+
+  padding: 0 20px;
+  max-width: 1600px;
 }
 /* scrol */
 .menu__container::-webkit-scrollbar {
@@ -104,9 +109,7 @@
 .menu__header-logo svg {
   width: 120px;
   height: 46px;
-}
-.menu__header-logo use {
-  fill: red;
+  fill: var(--color-4);
 }
 
 .menu__list {

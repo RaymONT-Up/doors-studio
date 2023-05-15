@@ -23,7 +23,7 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
     renderFraction: function (current, total) {
       return `
          <span class="swiper-pagination-current">${current}</span> из
-         <span class="swiper-pagination-total">${total}</span> Фото
+         <span class="swiper-pagination-total">${total}</span> фото
       `;
     },
   },

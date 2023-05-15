@@ -28,11 +28,22 @@
   visibility: visible;
 }
 .header-search__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
   height: 100%;
   width: 100%;
-  overflow-y: auto;
-  padding-right: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 
   -webkit-box-sizing: border-box;
 
@@ -40,16 +51,7 @@
 
   box-sizing: border-box;
 }
-.header-search__container::-webkit-scrollbar {
-  width: 4px;
-  height: 0;
-}
-.header-search__container::-webkit-scrollbar-track {
-  background-color: rgba(var(--color-3-RGB), 0.5);
-}
-.header-search__container::-webkit-scrollbar-thumb {
-  background-color: var(--color-3);
-}
+
 .header-search__btn-close {
   display: block;
   width: -webkit-fit-content;
@@ -159,7 +161,32 @@
   padding: 10px;
 }
 
+/* scroll */
+.header-search__result,
 .header-search__categories {
+  padding-right: 10px;
+  height: 100%;
+  overflow-y: auto;
+}
+.header-search__categories::-webkit-scrollbar,
+.header-search__result::-webkit-scrollbar {
+  width: 4px;
+  height: 0;
+}
+.header-search__categories::-webkit-scrollbar-track,
+.header-search__result::-webkit-scrollbar-track {
+  background-color: rgba(var(--color-3-RGB), 0.5);
+}
+.header-search__categories::-webkit-scrollbar-thumb,
+.header-search__result::-webkit-scrollbar-track {
+  background-color: var(--color-3);
+}
+
+/* categories */
+
+.header-search__categories {
+  overflow-y: auto;
+  height: 100%;
   display: none;
   margin-top: 50px;
 }
@@ -271,7 +298,7 @@
   margin-bottom: 12px;
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1600px) {
   .header-search__result-list {
     grid-template-columns: repeat(6, minmax(210px, 1fr));
   }
@@ -299,9 +326,6 @@
   }
 }
 @media (max-width: 800px) {
-  .header-search__container {
-    padding-right: 16px;
-  }
   .header-search {
     padding: 30px 0 0 0;
   }
@@ -376,9 +400,6 @@
   }
 }
 @media (max-width: 400px) {
-  .header-search__container {
-    padding-right: 8px;
-  }
   .header-search__btn-close svg {
     width: 32px;
     height: 32px;

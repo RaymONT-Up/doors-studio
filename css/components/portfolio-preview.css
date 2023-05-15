@@ -76,7 +76,7 @@
 
 .portfolio-preview__item--1 {
   grid-column: 1/15;
-  margin-right: 5%;
+  margin-right: 4.8%;
 }
 .portfolio-preview__item--2 {
   margin-left: -1%;
@@ -85,24 +85,26 @@
 }
 .portfolio-preview__item--3 {
   margin-left: 4%;
+  margin-right: -0.1%;
   grid-column: 23/31;
 }
 .portfolio-preview__item--4 {
   grid-column: 1/9;
-  margin-right: 2.8%;
+  margin-right: 3.5%;
 }
 .portfolio-preview__item--5 {
   grid-column: 12/17;
-  margin-left: 2.1%;
+  margin-left: 3%;
   margin-right: -2%;
 }
 .portfolio-preview__item--6 {
-  margin-left: -1.8%;
+  margin-right: -0.55%;
+  margin-left: -1.6%;
   grid-column: 18/31;
 }
 .portfolio-preview__item--7 {
   grid-column: 1/11;
-  margin-right: -5.8%;
+  margin-right: -5.35%;
 }
 .portfolio-preview__item--8 {
   grid-column: 12/20;
@@ -114,8 +116,15 @@
 .portfolio-preview__item--9 {
   grid-column: 23/31;
   margin-left: 4%;
-  margin-right: -1%;
+  margin-right: -0.76%;
 }
+
+.portfolio-preview__item--7,
+.portfolio-preview__item--8,
+.portfolio-preview__item--9 {
+  margin-top: 3px;
+}
+
 .portfolio-preview__item--10 {
   display: none;
 }
@@ -221,6 +230,12 @@
   }
 
   /* items */
+
+  .portfolio-preview__item--7,
+  .portfolio-preview__item--8,
+  .portfolio-preview__item--9 {
+    margin-top: 0;
+  }
   .portfolio-preview__items {
     grid-gap: 77px 0;
     grid-auto-flow: dense;

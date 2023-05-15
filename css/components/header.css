@@ -18,9 +18,19 @@
   padding: 36px 0;
 }
 .header__logo {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: auto;
 }
+.header__logo svg {
+  width: 120px;
+  height: 46px;
+  fill: var(--color-1);
+}
+
 .header__search-btn {
   margin-right: 44px;
   display: -webkit-box;
@@ -60,6 +70,8 @@
 }
 .header__menu-btn svg {
   margin-right: 12px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 800px) {
