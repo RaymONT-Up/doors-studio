@@ -78,8 +78,9 @@
   .header__inner {
     padding: 20px 0;
   }
-  .header__logo {
+  .header__logo svg {
     width: 80px;
+    height: 30.43px;
   }
   .header__menu-btn {
     font-size: 15px;
