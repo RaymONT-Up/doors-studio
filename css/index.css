@@ -772,7 +772,7 @@ img {
 }
 .pagination__item:hover {
   color: var(--color-1-RGB);
-
+  background: rgba(var(--color-3-RGB), 0.5);
   opacity: 1;
 }
 .pagination__item--active {
@@ -1439,7 +1439,7 @@ img {
 .slider-arrows__arrow--next svg {
   fill: var(--color-1);
   stroke: var(--color-1);
-  stroke-width: 0.5px;
+  stroke-width: 0.3px;
   width: 80px;
   height: 13px;
   opacity: 0.8;
