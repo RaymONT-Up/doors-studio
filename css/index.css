@@ -714,7 +714,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.navigation__arrow path {
+.navigation__arrow svg {
   stroke: var(--color-2);
 
   -webkit-transition: all, var(--transition-duration-hover);
@@ -725,7 +725,12 @@ img {
 
   transition: all, var(--transition-duration-hover);
 }
-.navigation__arrow:hover path {
+.navigation__arrow--prev svg,
+.navigation__arrow--next svg {
+  width: 32px;
+  height: 32px;
+}
+.navigation__arrow:hover svg {
   stroke: var(--color-1);
 }
 .pagination {
