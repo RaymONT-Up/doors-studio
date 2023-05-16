@@ -1,6 +1,6 @@
 .interior-canvases__inner {
   margin-left: 8.6%;
-  margin-bottom: 130px;
+  margin-bottom: 125px;
 }
 
 .interior-canvases__box {
@@ -34,6 +34,7 @@
 
 /* Slider */
 .interior-canvases__slider {
+  padding-bottom: 5px;
   max-width: 763px;
   margin-right: 0;
   margin-left: auto;
@@ -75,13 +76,17 @@
 }
 .interior-canvases__item .preview-card__link {
   font-family: "TTRamillas";
-  font-size: 17px;
-  padding-bottom: 9px;
+  font-size: 20px;
+  line-height: 140%;
+
+  padding-bottom: 5px;
 }
 .interior-canvases__item .preview-card {
   height: auto;
 }
-
+.interior-canvases__item .preview-card__img-wrapper {
+  margin-bottom: 18px;
+}
 .interior-canvases__item.swiper-slide-active {
   -webkit-transform: translateY(20%) scaleY(1.2);
   -moz-transform: translateY(20%) scaleY(1.2);
@@ -90,11 +95,11 @@
   transform: translateY(7.5%) scaleY(1.15);
 }
 .interior-canvases__item.swiper-slide-active .preview-card__link {
-  font-size: 20px;
-  line-height: 20px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
-
+.interior-canvases__item.swiper-slide-active .preview-card__img-wrapper {
+  margin-bottom: 12px;
+}
 .interior-canvases__item.swiper-slide-active .preview-card__hover-body {
   -webkit-transform: scaleY(0.85);
   -moz-transform: scaleY(0.85);

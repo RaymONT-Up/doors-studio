@@ -28,9 +28,9 @@
   margin: 10px 0 47px 0;
 }
 .product__img-wrapper {
-  position: -webkit-sticky;
+  /* position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 10px; */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
