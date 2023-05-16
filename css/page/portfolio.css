@@ -9,20 +9,6 @@
 .main--portfolio {
   margin-top: 80px;
 }
-.main--portfolio .showroom__link {
-  padding-right: 0;
-  text-transform: uppercase;
-}
-.main--portfolio .showroom__link::before {
-  content: none;
-}
-.main--portfolio .showroom__link::after {
-  bottom: 1px;
-  opacity: 1;
-}
-.main--portfolio .showroom__link:hover .showroom__link::after {
-  opacity: 0.8;
-}
 
 .main--portfolio .space-for-designers__inner {
   margin-bottom: 199px;
