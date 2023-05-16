@@ -311,6 +311,9 @@
 }
 
 @media (max-width: 600px) {
+  .portfolio-preview__slider {
+    margin-right: -12px;
+  }
   .portfolio-preview__inner {
     padding: 63px 0;
   }

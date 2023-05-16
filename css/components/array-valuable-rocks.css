@@ -138,7 +138,7 @@
 }
 @media (max-width: 400px) {
   .array-valuable-rocks__inner {
-    padding: 63px 0;
+    padding: 63px 0 60px 0;
   }
   .array-valuable-rocks__box {
     margin-left: 0;

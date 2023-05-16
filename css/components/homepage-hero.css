@@ -48,7 +48,7 @@
 }
 @media (max-width: 400px) {
   .homepage-hero__inner {
-    padding: 20px 0 55px 0;
+    padding: 15px 0 55px 0;
   }
   .homepage-hero__img-wrapper {
     display: none;
