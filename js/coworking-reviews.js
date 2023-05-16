@@ -14,11 +14,16 @@ const coworkingReviewSlider = new Swiper(".coworking-reviews__slider-review", {
     },
 
     601: {
-      slidesPerView: 4,
+      slidesPerView: 5.51,
+      spaceBetween: 24,
     },
-
-    1200: {
+    801: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1100: {
       slidesPerView: 5.45,
+      spaceBetween: 30,
     },
   },
 });
@@ -51,11 +56,16 @@ const coworkingReviewsImgSlider = new Swiper(".coworking-reviews__slider", {
       spaceBetween: 10,
       centeredSlides: true,
     },
-    601: {
-      slidesPerView: 4,
-    },
 
-    1200: {
+    601: {
+      slidesPerView: 5.51,
+      spaceBetween: 24,
+    },
+    801: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+    1100: {
       slidesPerView: 5.45,
       spaceBetween: 30,
     },
