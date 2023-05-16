@@ -1230,6 +1230,7 @@ img {
   color: var(--color-1);
 }
 .preview-card-2__price {
+  position: relative;
   font-family: "TTRamillas";
   font-style: normal;
   font-weight: 400;
@@ -1238,6 +1239,45 @@ img {
   white-space: nowrap;
 
   color: var(--color-1);
+}
+.preview-card-2:hover .preview-card-2__price::after,
+.preview-card-2:hover .preview-card-2__price::before {
+  opacity: 1;
+}
+.preview-card-2__price::after,
+.preview-card-2__price::before {
+  content: "";
+  position: absolute;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  -webkit-transition: opacity, var(--transition-duration-hover);
+  -o-transition: opacity, var(--transition-duration-hover);
+  -moz-transition: opacity, var(--transition-duration-hover);
+  transition: opacity, var(--transition-duration-hover);
+}
+.preview-card-2__price::after {
+  top: 50%;
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+  background-image: url(./../img/icons/arrow-up-right.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.preview-card-2__price::before {
+  bottom: -12px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-1);
 }
 
 .preview-card-2__hover {
@@ -1694,6 +1734,8 @@ img {
     line-height: 138%;
   }
   .preview-card-2__price {
+    position: relative;
+    padding-right: 30px;
     font-size: 17px;
     line-height: 141%;
   }
