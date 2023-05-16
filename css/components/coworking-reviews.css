@@ -353,6 +353,20 @@
     display: none;
   }
 }
+@media (max-width: 359px) {
+  .coworking-reviews__item-review.swiper-slide-active {
+    min-width: 255px;
+  }
+  .coworking-reviews__item-review.swiper-slide-active{
+    margin-left: -50px;
+  }
+  .coworking-reviews__slider-review{
+    min-width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+    
+  }
+}
 @-webkit-keyframes rewievText {
   0% {
     opacity: 0;
