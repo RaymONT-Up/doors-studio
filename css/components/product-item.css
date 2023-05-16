@@ -177,6 +177,11 @@
   opacity: 0.5;
 }
 
+.product-item__arrow {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-1);
+}
 .product-item__colors-item {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

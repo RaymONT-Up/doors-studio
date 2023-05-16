@@ -1157,6 +1157,14 @@ img {
   min-height: 16px;
   height: 16px;
   margin-left: 16px;
+
+  stroke: var(--color-1);
+}
+.preview-card__link-img svg {
+  width: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  height: 16px;
 }
 
 /*  */

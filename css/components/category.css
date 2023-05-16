@@ -67,6 +67,10 @@
 }
 .category__link-icon {
   margin: 16px 0 0 16px;
+  width: 42px;
+  height: 32px;
+
+  stroke: var(--color-1);
 }
 .category__link br {
   display: none;

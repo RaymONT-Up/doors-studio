@@ -23,7 +23,15 @@
   font-size: 17px;
   line-height: 141%;
 }
-
+.portfolio__item .preview-card__link {
+  -webkit-transition: opacity, var(--transition-duration-hover);
+  -o-transition: opacity, var(--transition-duration-hover);
+  -moz-transition: opacity, var(--transition-duration-hover);
+  transition: opacity, var(--transition-duration-hover);
+}
+.portfolio__item .preview-card:hover .preview-card__link {
+  opacity: 0.8;
+}
 .portfolio__item--3 .preview-card__img {
   height: 520px;
 }
