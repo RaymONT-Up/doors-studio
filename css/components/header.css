@@ -42,6 +42,7 @@
 .header__search-btn svg {
   width: 32px;
   height: 32px;
+  stroke: var(--color-1);
 }
 .header__menu-btn {
   display: -webkit-box;
