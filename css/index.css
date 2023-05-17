@@ -1,6 +1,6 @@
 @import "./libs/reset.css";
 @import "./vars.css";
-@import "./components/UI/popup.css";
+@import "./components/popups/popup.css";
 
 /* Fonts */
 @font-face {

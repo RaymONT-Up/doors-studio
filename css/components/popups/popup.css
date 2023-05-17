@@ -76,6 +76,11 @@
   right: 13px;
   padding: 10px 10px;
 }
+.popupClose svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-1);
+}
 
 .popupTitle {
   margin-bottom: 12px;
