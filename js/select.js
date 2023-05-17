@@ -100,7 +100,7 @@ const customSelect = (select, count, initClick = false) => {
 
   // ---------------
   if (initClick) {
-    // init click on every first select-items
+    // every first element in selectors with a parent container 'js-select-init-click' will be active because it receives a click event
 
     const selectWrapper = document.querySelectorAll(".js-select-init-click")[0];
     selectWrapper.querySelectorAll(".select-items").forEach(select => {
