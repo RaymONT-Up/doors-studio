@@ -1,5 +1,6 @@
 // --------- Кастомовые селекты на странице
 /* Look for any elements with the class "custom-select": */
+// initClick for click on first element in selectors with class js-select-init-click and give active class
 const customSelect = (select, count, initClick = false) => {
   x = document.getElementsByClassName(select);
   l = x.length;
@@ -109,4 +110,7 @@ const customSelect = (select, count, initClick = false) => {
 };
 customSelect("js-select", 1);
 
-customSelect("js-select-init-click", 0, true);
+// if there is a class 'js-select-init-click', then we launch an init click for it
+if (Boolean(document.querySelector(".js-select-init-click"))) {
+  customSelect("js-select-init-click", 0, true);
+}
