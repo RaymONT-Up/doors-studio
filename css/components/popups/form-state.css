@@ -26,6 +26,9 @@
 .form-state__icon {
   display: block;
   margin: 0 auto 12px auto;
+
+  width: 49px;
+  height: 48px;
 }
 .form-state__title {
   text-align: center;
