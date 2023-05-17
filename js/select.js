@@ -1,6 +1,6 @@
 // --------- Кастомовые селекты на странице
 /* Look for any elements with the class "custom-select": */
-const customSelect = (select, count) => {
+const customSelect = (select, count, initClick = false) => {
   x = document.getElementsByClassName(select);
   l = x.length;
 
@@ -38,7 +38,6 @@ const customSelect = (select, count) => {
         var wrapper = this.parentNode.parentNode;
         wrapper.classList.add("select--active");
         firstClick = false;
-        console.log("t");
 
         for (i = 0; i < sl; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
@@ -98,14 +97,16 @@ const customSelect = (select, count) => {
     then close all select boxes: */
   document.addEventListener("click", closeAllSelect);
 
-  // init click for each first items of select-items
-  // document.querySelectorAll(".select-items").forEach(select => {
-  //   select.children[0].click();
-  // });
+  // ---------------
+  if (initClick) {
+    // init click on every first select-items
 
-  // I hide the first element that plays the role of a name with value=none
-  document.querySelectorAll(".select-items").forEach(select => {
-    select.children[0].style.display = "none";
-  });
+    const selectWrapper = document.querySelectorAll(".js-select-init-click")[0];
+    selectWrapper.querySelectorAll(".select-items").forEach(select => {
+      select.children[0].click();
+    });
+  }
 };
-customSelect("select", 0);
+customSelect("js-select", 1);
+
+customSelect("js-select-init-click", 0, true);
