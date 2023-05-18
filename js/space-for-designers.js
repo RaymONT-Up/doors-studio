@@ -16,14 +16,6 @@ const spaceForDesignersSlider = new Swiper(".space-for-designers__slider", {
   // Бесконечные слайды
   loop: true,
 
-  // отключить предзагрузку всех картинок
-  preloadImages: false,
-
-  lazy: {
-    // подгружать при переключении слайда
-    loadOnTransitionStart: false,
-  },
-
   // Пагинация
   pagination: {
     el: ".space-for-designers__pagination",
