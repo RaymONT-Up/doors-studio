@@ -477,7 +477,7 @@
 .catalog-filter .select-selected::after {
   margin-left: auto;
 
-  width: 16px;
+  width: 15px;
   height: 8px;
 
   background-image: url(./../../img/icons/accordion.svg);
@@ -502,22 +502,11 @@
   filter: invert(1);
 }
 
-/* door-color-position */
+/* door-color */
+.catalog-filter__accordion-content--color {
+  padding: 0 20px;
+}
 
-.catalog-filter .door-color__label:nth-child(1n) {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.catalog-filter .door-color__label:nth-child(10n + 1) {
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -moz-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
 @media (max-width: 769px) {
   .catalog-filter__body {
     max-width: 620px;
@@ -572,21 +561,7 @@
 
   /* door-color */
   .catalog-filter__accordion-content--color {
-    max-width: 500px;
-  }
-  .catalog-filter .door-color__label:nth-child(1n) {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .catalog-filter .door-color__label:nth-child(9n + 1) {
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    padding: 0 30px;
   }
 }
 @media (max-width: 630px) {
@@ -621,25 +596,6 @@
     width: 139px;
     height: 250px;
     min-height: 250px;
-  }
-}
-@media (max-width: 580px) {
-  .catalog-filter__accordion-content--color {
-    max-width: 400px;
-  }
-  .catalog-filter .door-color__label:nth-child(1n) {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .catalog-filter .door-color__label:nth-child(7n + 1) {
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
   }
 }
 
@@ -749,48 +705,7 @@
     font-size: 13px;
     line-height: 138%;
   }
-
-  /* colors */
-  .catalog-filter__accordion-content--color {
-    max-width: 350px;
-  }
-
-  .catalog-filter .door-color__label:nth-child(7n + 1) {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .catalog-filter .door-color__label:nth-child(6n + 1) {
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -moz-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
 }
 
 @media (max-width: 359px) {
-  .catalog-filter__accordion-content--color {
-    max-width: 300px;
-  }
-  .catalog-filter .door-color__label:nth-child(1n) {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .catalog-filter .door-color__label:nth-child(5n + 1) {
-    -webkit-box-align: start;
-
-    -webkit-align-items: flex-start;
-
-    -moz-box-align: start;
-
-    -ms-flex-align: start;
-
-    align-items: flex-start;
-  }
 }
