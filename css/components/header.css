@@ -24,11 +24,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-right: auto;
-}
-.header__logo svg {
+
   width: 120px;
-  height: 46px;
-  fill: var(--color-1);
+  /* height: 46px; */
 }
 
 .header__search-btn {
@@ -79,10 +77,11 @@
   .header__inner {
     padding: 20px 0;
   }
-  .header__logo svg {
+  .header__logo {
     width: 80px;
-    height: 30.43px;
+    /* height: 30px; */
   }
+
   .header__menu-btn {
     font-size: 15px;
     line-height: 133%;

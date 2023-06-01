@@ -120,10 +120,8 @@
 .menu__subtitle:nth-child(2) {
   margin-bottom: 33px;
 }
-.menu__header-logo svg {
+.menu__header-logo {
   width: 120px;
-  height: 46px;
-  fill: var(--color-4);
 }
 
 .menu__list {
@@ -299,9 +297,8 @@
     padding: 0px 13px 0px 20px;
   }
 
-  .menu__header-logo svg {
+  .menu__header-logo {
     width: 80px;
-    height: 31px;
   }
 
   .menu__subtitle {
@@ -347,11 +344,14 @@
 }
 @media (max-width: 600px) {
   .menu {
-    padding: 14px 0 0 0;
+    padding: 11px 0 0 0;
+  }
+  .menu__btn {
+    padding-top: 2px;
   }
   .menu__header {
-    padding: 6px 20px 0 20px;
-    margin-bottom: 27px;
+    padding: 4px 20px 0 20px;
+    margin-bottom: 29px;
   }
 
   .menu__subtitle:nth-child(2) {
@@ -411,12 +411,10 @@
 @media (max-width: 400px) {
   .menu__header {
     padding: 0 12px;
-    margin-bottom: 27px;
   }
 
-  .menu__header-logo svg {
+  .menu__header-logo {
     width: 60px;
-    height: 22.78px;
   }
 
   .menu__btn svg {
