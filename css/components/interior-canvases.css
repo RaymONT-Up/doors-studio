@@ -145,10 +145,14 @@
   .interior-canvases__controlers {
     margin-bottom: 6px;
   }
+
+  .interior-canvases__pagination {
+    font-size: 13px;
+  }
   .interior-canvases__slider {
     margin-right: 0;
     max-width: 360px;
-    height: 440px;
+    height: 435px;
   }
   .interior-canvases__item {
     padding-left: 10px;
@@ -185,13 +189,30 @@
     line-height: 20px;
     padding-bottom: 12px;
   }
+
+  .interior-canvases__item .preview-card__img-wrapper {
+    margin-bottom: 12px;
+  }
+  .interior-canvases .preview-card__link-img {
+    margin-bottom: 2px;
+  }
   .interior-canvases__item.swiper-slide-active .preview-card__link {
     padding-bottom: 12px;
   }
+  .interior-canvases__item .preview-card__link {
+    font-family: "TTRamillas";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    -webkit-font-feature-settings: "pnum" on, "lnum" on;
+
+    -moz-font-feature-settings: "pnum" on, "lnum" on;
+
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
 }
 
-@media (max-width: 700px) {
-}
 @media (max-width: 650px) {
   .interior-canvases__inner {
     margin-bottom: 95px;
@@ -266,6 +287,18 @@
     -ms-transform: scale(1, 1) translate(0);
     -o-transform: scale(1, 1) translate(0);
     transform: scale(1, 1) translate(0);
+  }
+
+  .interior-canvases__item.swiper-slide-active .preview-card__hover-body {
+    -webkit-transform: scaleY(1);
+
+    -moz-transform: scaleY(1);
+
+    -ms-transform: scaleY(1);
+
+    -o-transform: scaleY(1);
+
+    transform: scaleY(1);
   }
 
   .interior-canvases__item.swiper-slide-active .preview-card__img {

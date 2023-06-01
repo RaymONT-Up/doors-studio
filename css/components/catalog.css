@@ -198,10 +198,6 @@
 }
 
 @media (max-width: 1000px) {
-  .catalog__item:nth-child(n + 9) {
-    display: none;
-  }
-
   .catalog__list {
     grid-gap: 100px 0;
   }

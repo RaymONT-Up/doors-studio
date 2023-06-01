@@ -70,7 +70,7 @@
 }
 @media (max-width: 800px) {
   .vertical-lock__inner {
-    margin-left: 8.5%;
+    margin-left: 0;
     margin-bottom: 119px;
   }
   .vertical-lock__title {

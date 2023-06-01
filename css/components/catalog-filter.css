@@ -82,6 +82,7 @@
   flex-direction: column;
 
   overflow-y: auto;
+  overflow-x: hidden;
 
   -webkit-transform: translateX(120%);
   -moz-transform: translateX(120%);
