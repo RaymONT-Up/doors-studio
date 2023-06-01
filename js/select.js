@@ -114,3 +114,7 @@ customSelect("js-select", 1);
 if (Boolean(document.querySelector(".js-select-init-click"))) {
   customSelect("js-select-init-click", 0, true);
 }
+
+if (Boolean(document.querySelector(".catalog-filter-select"))) {
+  customSelect("catalog-filter-select", 0);
+}

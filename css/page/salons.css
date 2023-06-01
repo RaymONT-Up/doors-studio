@@ -9,6 +9,10 @@
   margin-top: 83px;
 }
 
+.main--salons .crumbs {
+  margin-bottom: 12px;
+}
+
 @media (max-width: 800px) {
   .main--salons {
     margin-top: 40px;

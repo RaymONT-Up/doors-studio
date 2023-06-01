@@ -150,8 +150,10 @@
 }
 
 .product__pay {
-  max-width: 584px;
+  max-width: 100%;
+  padding: 24px;
   margin: 0 auto 65px auto;
+  background-color: var(--color-7);
 }
 
 .product__color {
@@ -388,7 +390,7 @@
   }
 
   .product__pay {
-    max-width: 412px;
+    padding: 16px;
     margin-bottom: 39px;
   }
   .product__price {
