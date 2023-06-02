@@ -10,11 +10,12 @@
   margin: 0 auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .coworking-hero__inner {
     margin-bottom: 79px;
   }
-
+}
+@media (max-width: 800px) {
   .coworking-hero__title {
     margin-bottom: 44px;
 

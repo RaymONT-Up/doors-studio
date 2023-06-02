@@ -61,13 +61,12 @@
   .coworking-for__list {
     min-width: 400px;
   }
-}
-@media (max-width: 800px) {
   .coworking-for__inner {
     padding: 80px 0;
     margin-bottom: 80px;
   }
-
+}
+@media (max-width: 800px) {
   .coworking-for__title {
     margin-bottom: 61px;
   }

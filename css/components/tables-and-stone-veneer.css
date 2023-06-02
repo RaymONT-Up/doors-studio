@@ -32,10 +32,12 @@
   max-height: 593px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .tables-and-stone-veneer__inner {
     padding: 80px 0;
   }
+}
+@media (max-width: 800px) {
   .tables-and-stone-veneer__title {
     margin-bottom: 60px;
   }

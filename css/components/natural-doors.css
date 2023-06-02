@@ -61,10 +61,12 @@
     max-width: 500px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .natural-doors__inner {
     padding: 78px 0;
   }
+}
+@media (max-width: 800px) {
   .natural-doors__title {
     max-width: 670px;
     margin-bottom: 60px;

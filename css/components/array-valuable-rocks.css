@@ -67,11 +67,12 @@
     margin-left: 0;
   }
 }
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .array-valuable-rocks__inner {
     padding: 80px 0;
   }
+}
+@media (max-width: 800px) {
   .array-valuable-rocks__title {
     max-width: 236px;
     margin-bottom: 16px;

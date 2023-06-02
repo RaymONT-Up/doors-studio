@@ -125,7 +125,7 @@
     line-height: 133%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .coworking-about__inner {
     margin-bottom: 119px;
   }

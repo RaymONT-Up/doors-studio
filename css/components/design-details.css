@@ -103,11 +103,13 @@
     max-height: 320px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .design-details__inner {
     padding-bottom: 57px;
     margin-bottom: 0;
   }
+}
+@media (max-width: 800px) {
   .design-details__paragraph {
     margin-left: 3%;
     min-width: 270px;

@@ -38,10 +38,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .floors-not-afraid-moisture__inner {
     padding: 82px 0;
   }
+}
+@media (max-width: 800px) {
   .floors-not-afraid-moisture__title {
     margin-bottom: 30px;
   }

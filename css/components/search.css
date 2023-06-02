@@ -300,10 +300,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .search__inner {
     margin-bottom: 136px;
   }
+}
+
+@media (max-width: 800px) {
   .search__list {
     margin-bottom: -2px;
   }

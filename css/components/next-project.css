@@ -52,10 +52,12 @@
     margin-right: 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .next-project__inner {
     margin-bottom: 109px;
   }
+}
+@media (max-width: 800px) {
   .next-project__top {
     margin-bottom: 42px;
   }

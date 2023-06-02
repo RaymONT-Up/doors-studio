@@ -116,10 +116,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .product-details-hero__inner {
     margin-bottom: 121px;
   }
+}
+@media (max-width: 800px) {
   .product-details-hero__item--3 {
     margin: -41% 0 0 0;
   }

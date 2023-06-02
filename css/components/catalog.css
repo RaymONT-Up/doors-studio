@@ -292,10 +292,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .catalog__inner {
     padding-bottom: 68px;
   }
+}
+@media (max-width: 800px) {
   .catalog__top {
     margin-bottom: 32px;
   }

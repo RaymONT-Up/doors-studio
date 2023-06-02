@@ -126,6 +126,11 @@
   }
 }
 
+@media (max-width: 900px) {
+  .interior-canvases__inner {
+    margin-bottom: 108px;
+  }
+}
 @media (max-width: 800px) {
   .interior-canvases__inner {
     margin-left: 0;

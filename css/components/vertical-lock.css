@@ -68,6 +68,11 @@
     margin-left: 1%;
   }
 }
+@media (max-width: 900px) {
+  .vertical-lock__inner {
+    margin-bottom: 119px;
+  }
+}
 @media (max-width: 800px) {
   .vertical-lock__inner {
     margin-left: 0;

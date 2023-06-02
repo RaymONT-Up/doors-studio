@@ -131,11 +131,14 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .we-in-touch__inner {
     padding: 72px 0;
     margin-bottom: 38px;
   }
+}
+
+@media (max-width: 800px) {
   .we-in-touch__title {
     margin-bottom: 26px;
   }

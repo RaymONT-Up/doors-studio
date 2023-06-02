@@ -39,11 +39,12 @@
     grid-gap: 100px 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .salons-about__inner {
     margin-bottom: 108px;
   }
-
+}
+@media (max-width: 800px) {
   .salons-about__title {
     margin-bottom: 60px;
   }

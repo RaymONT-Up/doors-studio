@@ -98,12 +98,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .furniture-and-accessories__inner {
     padding: 80px 0 88px 0;
     margin-bottom: 61px;
   }
-
+}
+@media (max-width: 800px) {
   .furniture-and-accessories__title {
     margin-bottom: 59px;
   }

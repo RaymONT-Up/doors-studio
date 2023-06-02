@@ -30,11 +30,12 @@
   width: 100%;
 }
 
-@media (max-width: 825px) {
+@media (max-width: 900px) {
   .other-collection__inner {
     margin-bottom: 120px;
   }
-
+}
+@media (max-width: 825px) {
   .other-collection__list {
     grid-gap: 59px 0;
     margin-bottom: 57px;

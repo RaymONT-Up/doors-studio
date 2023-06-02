@@ -29,11 +29,13 @@
   display: inline-block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .showroom__inner {
     padding-bottom: 119px;
     padding-top: 39px;
   }
+}
+@media (max-width: 800px) {
   .showroom__title {
     margin-bottom: 32px;
   }

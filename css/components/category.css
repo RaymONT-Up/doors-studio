@@ -121,11 +121,12 @@
     grid-gap: 46px 20px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .category__inner {
     margin-bottom: 85px;
   }
-
+}
+@media (max-width: 800px) {
   .category__title {
     font-size: 54px;
     margin-bottom: 30px;

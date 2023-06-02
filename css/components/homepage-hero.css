@@ -30,6 +30,11 @@
   line-height: 141%;
 }
 
+@media (max-width: 900px) {
+  .homepage-hero__inner {
+    padding: 26px 0 60px 0;
+  }
+}
 @media (max-width: 800px) {
   .homepage-hero__inner {
     padding: 26px 0 60px 0;

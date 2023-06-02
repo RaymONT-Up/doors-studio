@@ -318,13 +318,13 @@
     max-width: 500px;
   }
 }
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .product__inner {
     padding-bottom: 39px;
     margin-bottom: 120px;
   }
-
+}
+@media (max-width: 800px) {
   .product__img-wrapper {
     padding: 20px 5px;
     -webkit-box-sizing: border-box;

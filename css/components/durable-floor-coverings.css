@@ -44,13 +44,16 @@
   display: none;
 }
 
+@media (max-width: 900px) {
+  .durable-floor-coverings__inner {
+    padding: 77px 0;
+  }
+}
 @media (max-width: 800px) {
   .durable-floor-coverings {
     background-color: var(--color-4);
   }
-  .durable-floor-coverings__inner {
-    padding: 77px 0;
-  }
+
   .durable-floor-coverings__title {
     max-width: 520px;
     margin-bottom: 60px;

@@ -129,11 +129,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .product-details-list__inner {
     padding: 80px 0 88px 0;
     margin-bottom: 36px;
   }
+}
+@media (max-width: 800px) {
   .product-details-list__list {
     grid-gap: 60px 0;
   }

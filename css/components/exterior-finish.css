@@ -113,10 +113,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .exterior-finish__inner {
     margin-bottom: 120px;
   }
+}
+@media (max-width: 800px) {
   .exterior-finish__list {
     grid-template-columns: repeat(30, 1fr);
   }

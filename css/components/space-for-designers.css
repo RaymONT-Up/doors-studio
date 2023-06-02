@@ -145,11 +145,13 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .space-for-designers__inner {
     padding-bottom: 104px;
   }
+}
 
+@media (max-width: 800px) {
   .space-for-designers__title {
     max-width: 377px;
     margin-bottom: 44px;

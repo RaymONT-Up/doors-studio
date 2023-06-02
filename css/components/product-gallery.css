@@ -83,11 +83,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .product-gallery__inner {
     margin-bottom: 53px;
   }
-
+}
+@media (max-width: 800px) {
   .product-gallery__title {
     max-width: 500px;
     margin-bottom: 61px;
