@@ -903,13 +903,13 @@ img {
   -moz-border-radius: 50%;
   border-radius: 50%;
 
-  -webkit-transition: all, 0.5s;
+  -webkit-transition: all, var(--transition-duration-hover);
 
-  -o-transition: all, 0.5s;
+  -o-transition: all, var(--transition-duration-hover);
 
-  -moz-transition: all, 0.5s;
+  -moz-transition: all, var(--transition-duration-hover);
 
-  transition: all, 0.5s;
+  transition: all, var(--transition-duration-hover);
 }
 
 .door-color__custom-checkbox::after {
@@ -934,10 +934,14 @@ img {
   transform: scale(0);
 
   border: 1.5px solid transparent;
-  -webkit-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -moz-transition: all, 0.5s;
-  transition: all, 0.5s;
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
 }
 .door-color__input-checkbox:checked + .door-color__custom-checkbox {
   -webkit-transform: scale(0.77);
@@ -977,10 +981,14 @@ img {
 
   transform: scale(0);
   opacity: 0;
-  -webkit-transition: all, 0.5s;
-  -o-transition: all, 0.5s;
-  -moz-transition: all, 0.5s;
-  transition: all, 0.5s;
+
+  -webkit-transition: all, var(--transition-duration-hover);
+
+  -o-transition: all, var(--transition-duration-hover);
+
+  -moz-transition: all, var(--transition-duration-hover);
+
+  transition: all, var(--transition-duration-hover);
 
   color: var(--color-4);
 }

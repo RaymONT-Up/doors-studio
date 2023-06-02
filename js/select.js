@@ -98,6 +98,8 @@ const customSelect = (select, count, initClick = false) => {
     then close all select boxes: */
   document.addEventListener("click", closeAllSelect);
 
+  select;
+
   // ---------------
   if (initClick) {
     // every first element in selectors with a parent container 'js-select-init-click' will be active because it receives a click event

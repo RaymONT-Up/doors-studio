@@ -45,3 +45,39 @@ const catalogAccordion = () => {
   });
 };
 window.addEventListener("load", catalogAccordion);
+
+//-----
+// Показывает только последний активный эелмент, по которому было нажатие в colorsWrapper(фильтр цветов)
+//
+const colorsWrapper = document.querySelector(
+  ".catalog-filter__accordion-content--color"
+);
+
+let activeColor;
+
+// Делегирование событий на родительский элемент с цветами в фильтре
+colorsWrapper.addEventListener("click", e => {
+  const target = e.target.closest(".door-color__label");
+  // Если это не .door-color__label, тогда след код не выполняется
+  if (!target || e.target.tagName === "INPUT") return;
+
+  // значение input checked
+  const isChecked = target.querySelector("input").checked;
+
+  // если элемент уже активен, то при повторном нажатие убирается текст
+  if (target.classList.contains("active")) {
+    target.classList.remove("active");
+    return;
+  }
+
+  // Удаляется у активного элемента текст
+  if (activeColor) {
+    activeColor.classList.remove("active");
+  }
+
+  // если input по которому происходит нажатие не имеет true checked тогда добавляется класс active
+  if (!isChecked) {
+    target.classList.add("active");
+    activeColor = target;
+  }
+});
