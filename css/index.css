@@ -822,8 +822,6 @@ img {
   margin-right: 45px;
 }
 .tab.tab--active {
-  font-weight: 600;
-
   color: var(--color-1);
   border-color: var(--color-1);
 }
@@ -1101,7 +1099,7 @@ img {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
 
   background-color: rgba(var(--color-1-RGB), 0.4);
 
@@ -1132,6 +1130,9 @@ img {
   max-height: 200px;
   width: 100%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   text-align: center;
   line-height: 110%;
@@ -1139,6 +1140,7 @@ img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  padding: 5px;
 
   border: 1px solid var(--color-4);
 
@@ -1215,26 +1217,6 @@ img {
   margin-bottom: 17px;
   overflow: hidden;
 }
-.preview-card-2__img-wrapper::after {
-  content: "";
-  position: absolute;
-  z-index: 4;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-color: var(--color-1);
-  opacity: 0;
-
-  -webkit-transition: all, var(--transition-duration-hover);
-
-  -o-transition: all, var(--transition-duration-hover);
-
-  -moz-transition: all, var(--transition-duration-hover);
-
-  transition: all, var(--transition-duration-hover);
-}
 
 .preview-card-2__name {
   margin-bottom: 3px;
@@ -1302,39 +1284,14 @@ img {
 
 .preview-card-2__hover {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  width: 200px;
-  height: 200px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 160%;
-
-  border: 1px solid var(--color-4);
-  color: var(--color-4);
-
-  -webkit-transition: all, var(--transition-duration-hover);
-
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
   display: -webkit-box;
-
   display: -webkit-flex;
-
   display: -moz-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1346,14 +1303,56 @@ img {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 5px;
 
-  -o-transition: all, var(--transition-duration-hover);
-
-  -moz-transition: all, var(--transition-duration-hover);
-
-  transition: all, var(--transition-duration-hover);
+  background-color: rgba(var(--color-1-RGB), 0.4);
 
   opacity: 0;
+
+  -webkit-transition: opacity var(--transition-duration-hover);
+  -o-transition: opacity var(--transition-duration-hover);
+  -moz-transition: opacity var(--transition-duration-hover);
+  transition: opacity var(--transition-duration-hover);
+}
+
+.preview-card-2__hover-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+
+  border: 1px solid var(--color-4);
+  color: var(--color-4);
 }
 .preview-card-2__price span {
   -webkit-transform: translateY(8px) translateX(-15px) scale(0.65);
@@ -1640,6 +1639,16 @@ img {
     -moz-background-size: 24px 24px;
     background-size: 24px 24px;
   }
+
+  /* preview-card-hover */
+  .preview-card-2__hover-body,
+  .preview-card__hover-body {
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .preview-card-2__hover-body {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1685,6 +1694,14 @@ img {
   }
   .tab:not(:last-child) {
     margin-right: 27px;
+  }
+
+  .preview-card-2__hover-body,
+  .preview-card__hover-body {
+    max-width: 150px;
+    max-height: 150px;
+
+    font-size: 17px;
   }
 }
 @media (max-width: 580px) {
@@ -1771,6 +1788,15 @@ img {
   }
   .is-compact .fancybox__footer .fancybox__caption {
     margin-bottom: 0;
+  }
+
+  /* preview-card-hover */
+  .preview-card-2__hover-body,
+  .preview-card__hover-body {
+    max-width: 125px;
+    max-height: 125px;
+
+    font-size: 15px;
   }
 }
 

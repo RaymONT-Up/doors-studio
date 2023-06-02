@@ -187,8 +187,6 @@
   .products-from-project__item--1 .preview-card-2__img {
     height: 100%;
   }
-}
-@media (max-width: 600px) {
   .products-from-project__title {
     margin-bottom: 32px;
   }
