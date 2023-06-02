@@ -46,6 +46,22 @@ const catalogAccordion = () => {
 };
 window.addEventListener("load", catalogAccordion);
 
+// ----
+// Удаление активного класса для селектора размеров при нажатие ана первый элемент в виде имени по типу "Высота А"
+//
+const filterSizeSelects = document.querySelectorAll(".catalog-filter-select");
+
+filterSizeSelects.forEach(select => {
+  const selectNameReset = select
+    .querySelector(".select-items")
+    .querySelector("div");
+  selectNameReset.addEventListener("click", e => {
+    e.target
+      .closest(".catalog-filter-select")
+      .classList.remove("select--active");
+  });
+});
+
 //-----
 // Показывает только последний активный эелмент, по которому было нажатие в colorsWrapper(фильтр цветов)
 //
