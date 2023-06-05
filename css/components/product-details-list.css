@@ -366,3 +366,12 @@
     max-height: 120px;
   }
 }
+@media (max-width: 350px) {
+  .product-details-list__item--2 .preview-card-2__hover-body,
+  .product-details-list__item--5 .preview-card-2__hover-body {
+    max-width: 110px;
+    max-height: 110px;
+
+    font-size: 13px;
+  }
+}
