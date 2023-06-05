@@ -1495,6 +1495,20 @@ img {
   }
 }
 
+@media (max-width: 900px) {
+  /* preview-card-hover */
+  .preview-card-2__hover-body,
+  .preview-card__hover-body {
+    max-width: 170px;
+    max-height: 170px;
+  }
+
+  .preview-card-2__hover-body,
+  .preview-card__hover-body {
+    font-size: 17px;
+  }
+}
+
 @media (max-width: 800px) {
   body {
     font-size: 15px;
@@ -1646,16 +1660,6 @@ img {
     -webkit-background-size: 24px 24px;
     -moz-background-size: 24px 24px;
     background-size: 24px 24px;
-  }
-
-  /* preview-card-hover */
-  .preview-card-2__hover-body,
-  .preview-card__hover-body {
-    max-width: 170px;
-    max-height: 170px;
-  }
-  .preview-card-2__hover-body {
-    font-size: 17px;
   }
 }
 
