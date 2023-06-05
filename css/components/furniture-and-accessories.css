@@ -74,6 +74,17 @@
   max-height: 495px;
 }
 
+@media (max-width: 1420px) {
+  /* hover */
+  .furniture-and-accessories__item--2 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--5 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--6 .preview-card-2__hover-body {
+    max-width: 150px;
+    max-height: 150px;
+    font-size: 17px;
+  }
+}
+
 @media (max-width: 1100px) {
   .furniture-and-accessories__list {
     grid-gap: 50px 0;
@@ -167,9 +178,18 @@
   .furniture-and-accessories__item--7 .preview-card-2__img {
     height: 460px;
   }
+
+  /* hover */
+  .furniture-and-accessories__item--2 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--5 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--6 .preview-card-2__hover-body {
+    max-width: 110px;
+    max-height: 110px;
+    font-size: 15px;
+  }
 }
 
-@media (max-width: 666px) {
+@media (max-width: 670px) {
   .furniture-and-accessories__title {
     margin-bottom: 32px;
   }
@@ -226,6 +246,15 @@
     grid-column: 60/101;
     margin-top: 6%;
   }
+
+  /* hover */
+  .furniture-and-accessories__item--2 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--5 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--6 .preview-card-2__hover-body {
+    max-width: 150px;
+    max-height: 150px;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -262,5 +291,26 @@
   }
   .furniture-and-accessories__item--7 .preview-card-2__img {
     max-height: 240px;
+  }
+
+  /* hover */
+  .furniture-and-accessories__item--2 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--5 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--6 .preview-card-2__hover-body {
+    max-width: 120px;
+    max-height: 120px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  /* hover */
+  .furniture-and-accessories__item--2 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--5 .preview-card-2__hover-body,
+  .furniture-and-accessories__item--6 .preview-card-2__hover-body {
+    max-width: 110px;
+    max-height: 110px;
+
+    font-size: 13px;
   }
 }
