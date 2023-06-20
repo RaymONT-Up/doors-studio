@@ -13,7 +13,7 @@
 
   --color-error: #fb5353;
 
-  --transition-duration-hover: 0.4s;
+  --transition-duration-hover: 0.3s;
 
   --fancybox-bg: rgba(var(--color-1-RGB), 0);
 }
