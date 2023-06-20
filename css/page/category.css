@@ -7,7 +7,7 @@
   margin-top: 83px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main--category {
     margin-top: 40px;
   }

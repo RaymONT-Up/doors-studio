@@ -12,10 +12,12 @@
   margin-bottom: 82px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main--search {
     margin-top: 40px;
   }
+}
+@media (max-width: 800px) {
   .main--search .we-in-touch__inner {
     margin-bottom: 37px;
   }

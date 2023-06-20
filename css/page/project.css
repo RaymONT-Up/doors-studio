@@ -10,7 +10,7 @@
 .main--project {
   margin-top: 84px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .main--project {
     margin-top: 40px;
   }
