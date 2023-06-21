@@ -120,3 +120,7 @@ if (Boolean(document.querySelector(".js-select-init-click"))) {
 if (Boolean(document.querySelector(".catalog-filter-select"))) {
   customSelect("catalog-filter-select", 0);
 }
+
+if (Boolean(document.querySelector(".product-size__select"))) {
+  customSelect("product-size__select", 0);
+}
